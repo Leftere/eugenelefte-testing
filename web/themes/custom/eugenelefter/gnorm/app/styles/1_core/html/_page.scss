@@ -1,0 +1,27 @@
+// ================================== //
+//    #CORE/HTML - PAGE
+// ================================== //
+
+* {
+  box-sizing: border-box; // establishes border-box model for all elements
+  -webkit-tap-highlight-color: rgb(
+    0 0 0 / 0%
+  ); // Remove default tappable touch color in iOS
+  word-wrap: normal;
+}
+
+:root {
+  font-size: 62.5%; // Sets up the Base 10 stuff
+  position: relative;
+}
+
+html {
+}
+
+body {
+  @include font-size(16, 24);
+  background-color: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: 'lnum' 1, 'kern' 1;
+}

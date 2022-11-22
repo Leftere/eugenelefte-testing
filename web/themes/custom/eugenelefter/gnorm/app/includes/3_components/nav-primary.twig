@@ -1,0 +1,19 @@
+<nav class="nav nav--primary" aria-label="Primary" data-module="NavPrimary">
+  <div class="nav__inner wrapper">
+    <button type="button" class="nav__menu-toggle" aria-controls="nav__menu" aria-expanded="false">
+      <span class="nav__icon default">
+        {% include "@includes/2_pieces/icon.twig" with {icon: 'icon-menu'} %}
+        <span>Menu</span>
+      </span>
+
+      <span class="nav__icon close">
+        {% include "@includes/2_pieces/icon.twig" with {icon: 'icon-x'} %}
+        <span>Close</span>
+      </span>
+    </button>
+
+    <div class="nav__menu">
+      {% include "@includes/2_pieces/menu.twig" %}
+    </div>
+  </div>
+</nav>

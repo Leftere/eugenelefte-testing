@@ -1,0 +1,31 @@
+<header class="global-header js-global-header" data-module="NavDropdown">
+	<div
+		class="global-header__superutil">{# {% block super_utility_nav %}
+			                {% include "@includes/3_components/nav-super-utility.twig" with navSuperUtility %}
+			             {% endblock %} #}
+	</div>
+
+	<div
+		class="global-header__utility">{# {% block utility_nav %}
+			            {% include "@includes/3_components/nav-utility.twig" with navUtility %}
+			             {% endblock %} #}
+	</div>
+
+	<div class="global-header__logo">
+		{% if theme_logo %}
+			<a href="{{ front_url }}" aria-label="{{ site_name }}" class="logo">
+				<img src="{{ theme_logo }}" alt=""/>
+			</a>
+		{% endif %}
+	</div>
+
+	<div class="global-header__desktop">
+		{% block main_nav %}
+			{% if isCampaign %}
+				{% include '@includes/3_components/nav-primary--campaign.twig' with navPrimary %}
+			{% else %}
+				{% include '@includes/3_components/nav-primary.twig' with navPrimary %}
+			{% endif %}
+		{% endblock %}
+	</div>
+</header>

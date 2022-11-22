@@ -1,0 +1,18 @@
+// ================================== //
+//    #CORE - BREAKPOINTS
+// ================================== //
+$spacing-unit: 1.5rem;
+
+// Breakpoint variables
+$tablet: 600px;
+$large-tablet: 800px;
+$desktop: 1225px;
+$large-desktop: 1600px;
+
+@include add-breakpoint('tablet', $tablet);
+@include add-breakpoint('large-tablet', $large-tablet);
+@include add-breakpoint('desktop', $desktop);
+@include add-breakpoint('large-desktop', $large-desktop);
+
+$breakpoint-has-widths: ('tablet', 'large-tablet', 'desktop', 'large-desktop');
+

@@ -1,0 +1,21 @@
+{% set figureClasses = classes ? classes|join(' ') : '' %}
+{% if hasMask %}
+  {% set figureClasses = figureClasses ~ ' ' ~ 'image-block__figure--has-mask' %}
+{% endif %}
+
+<figure 
+  {% if figureClasses %} class="{{ figureClasses }}"{% endif %}
+  {% if label %} aria-label="{{ label }}"{% endif %}
+>
+  {% include "@includes/2_pieces/picture.twig" with image only %}
+
+  {% if figcaption or referenceText %}
+    <figcaption>
+      {{ figcaption|raw }}
+
+      {% if referenceText %}
+        {% include "@includes/3_components/reference-text.twig" with referenceText only %}
+      {% endif %}
+    </figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,52 @@
+{
+  "title": "6.2 Here2Assist",
+  "hero": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "<strong>Takeda Oncology Here2Assist<sup>TM</sup></strong>",
+    "subheading" :"<p>Here for you. Here for your patients.</p>"
+  },
+  "text": "<p>Takeda Oncology is committed to supporting both healthcare professionals and the patients under their care. This commitment is demonstrated via the Here2Assist program. This program was created to provide assistance to patients throughout their treatment journey.</p><p><strong>Here2Assist Program overview</strong></p><ul><li>Conducts benefits investigations to help patients understand their coverage options</li><li>Identifies available financial assistance that may be right for your patients</li><li>May help eligible patients get started on treatment in the event of an insurance delay</li><li>Can identify a specialty pharmacy to help fill and ship your patients' prescriptions appropriately</li></ul><p>Support services include:</p><ul><li>Benefit verification, prior authorization, and payer denial assistance</li><li>Takeda Oncology Co-pay Assistance Program <a href='https://www.takedaoncologycopay.com'>GET PROGRAM DETAILS</a></li><li>Specialty pharmacy referral and coordination</li><li>RapidStart Program</li><li>Patient Assistance Program</li></ul>",
+  "assetDownloadCard": [
+    {
+      "class": "card--asset-download",
+      "image": {
+        "src": "https://via.placeholder.com/50",
+        "alt": "This is an alt"
+      },
+      "title": "Here2Assist",
+      "description": "<p>Save the brochure</p>",
+      "cta": {
+        "url": "images/test.pdf",
+        "text": "Download the Here2Assist Brochure",
+        "icon": "icon-download",
+        "download": true
+      }
+    }
+  ],
+  "text2": "<p><strong>Enroll your patients in 3 easy steps</strong></p><ul><li>Download and print the enrollment form<br /> <a href='https://www.here2assist.com/pdf/Takeda_Oncology_Here2Assist_Enrollment_Form.pdf'>Get the Here2Assist Enrollment Form</a></li><li>Complete and sign the enrollment form together with your patient</li><li>Fax the completed enrollment form, along with a copy of your patient's insurance card and Rx to: 1-844-269-3038</li></ul>",
+  "twoCardsEnclosed": [
+    {
+      "class": "card--enclosed",
+      "title": "Here2Assist<sup>TM</sup>",
+      "description": "<p>We provide personalized support for patients prescribed Takeda Oncology products, including a patient assistance program called Here2Assist.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Learn About Patient Support",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "class": "card--enclosed",
+      "title": "Takeda Oncology Co-Pay Assistance Program",
+      "description": "<p>Co-pay support is available for eligible patients taking NINLARO.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Get Program Details",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ]
+}

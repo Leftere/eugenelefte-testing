@@ -1,0 +1,46 @@
+.spacer {
+  contain: content;
+
+  &--sm {
+    padding-block: var(--spacer-sm);
+  }
+
+  &--md {
+    padding-block: var(--spacer-md);
+  }
+
+  &--lg {
+    padding-block: var(--spacer-lg);
+  }
+
+  // Component currently only configured for equal block margins.
+  // Future might support separate start/end options, like this:
+
+  // &__start {
+  //   &--sm {
+  //     padding-block-start: var(--spacer-sm);
+  //   }
+
+  //   &--md {
+  //     padding-block-start: var(--spacer-md);
+  //   }
+
+  //   &--lg {
+  //     padding-block-start: var(--spacer-lg);
+  //   }
+  // }
+
+  // &__end {
+  //   &--sm {
+  //     padding-block-end: var(--spacer-sm);
+  //   }
+
+  //   &--md {
+  //     padding-block-end: var(--spacer-md);
+  //   }
+
+  //   &--lg {
+  //     padding-block-end: var(--spacer-lg);
+  //   }
+  // }
+}

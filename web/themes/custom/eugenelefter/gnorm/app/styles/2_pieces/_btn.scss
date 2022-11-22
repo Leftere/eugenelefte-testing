@@ -1,0 +1,124 @@
+:root {
+  --btn-font: var(--font-sans);
+  --btn-font-size: 1.4rem;
+  --btn-lineheight: 1.2;
+  --btn-bg: var(--color-primary);
+  --btn-fg: var(--color-primary-contrast);
+  --btn-hover-bg: var(--color-primary-dark);
+  --btn-hover-fg: var(--color-primary-dark-contrast);
+  --btn-border-color: transparent;
+  --btn-icon-color: currentColor;
+  --btn-border-radius: 100vmax;
+  --btn-letter-spacing: .1em;
+}
+
+%btn,
+.btn {
+  appearance: none;
+  background-color: var(--btn-bg);
+  border: .2em solid;
+  border-color: var(--btn-border-color);
+  border-radius: var(--btn-border-radius);
+  box-shadow: .125em .125em .25em rgba(#000, .4);
+  color: var(--btn-fg);
+  display: inline-block;
+  font-family: var(--btn-font);
+  font-size: var(--btn-font-size);
+  font-weight: 700;
+  letter-spacing: var(--btn-letter-spacing);
+  line-height: var(--btn-lineheight);
+  margin-inline: .25em;
+  max-width: 35rem;
+  max-width: max-content;
+  outline: none;
+  padding: .5em 1.5em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  vertical-align: middle;
+  width: 100%;
+
+  @include breakpoint($large-tablet) {
+    padding: .75em 2.5em;
+  }
+
+  &:hover,
+  &:focus {
+    --btn-border-color: rgb(255 255 255 / 80%);
+    background-color: var(--btn-hover-bg);
+    box-shadow: none;
+    color: var(--btn-hover-fg);
+  }
+
+  &:focus-visible {
+    text-decoration: underline;
+  }
+
+  &--icon {
+    padding: .5em 2.5em .5em 1em;
+
+    @include breakpoint($large-tablet) {
+      padding: .75em 3em .75em 2em;
+    }
+  }
+
+  .icon {
+    color: var(--btn-icon-color);
+    display: block;
+    height: 1.5em;
+    position: absolute;
+    right: .75em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+  }
+
+  %btn--sm,
+  &--sm {
+    @include font-size(12);
+    box-shadow: none;
+    letter-spacing: 0;
+    min-width: 10em;
+    padding: .5em 1em;
+    text-transform: none;
+  }
+
+  %btn--transparent,
+  &--transparent {
+    --btn-bg: transparent;
+    --btn-border-color: currentColor;
+    text-transform: none;
+  }
+
+  &.color {
+    &--primary {
+      --btn-bg: var(--color-primary);
+      --btn-fg: var(--color-primary-contrast);
+      --btn-hover-bg: var(--color-primary-dark);
+      --btn-hover-fg: var(--color-primary-dark-contrast);
+    }
+
+    &--secondary {
+      --btn-bg: var(--color-secondary);
+      --btn-fg: var(--color-secondary-contrast);
+      --btn-hover-bg: var(--color-secondary-dark);
+      --btn-hover-fg: var(--color-secondary-dark-contrast);
+    }
+
+    &--tertiary {
+      --btn-bg: var(--color-tertiary);
+      --btn-fg: var(--color-tertiary-contrast);
+      --btn-hover-bg: var(--color-tertiary-dark);
+      --btn-hover-fg: var(--color-tertiary-dark-contrast);
+    }
+  }
+}
+
+.btn__container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
+}

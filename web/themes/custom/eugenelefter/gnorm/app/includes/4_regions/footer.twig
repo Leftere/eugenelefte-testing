@@ -1,0 +1,43 @@
+<footer class="global-footer">
+  {# <div class="wrapper">
+    {% include "@includes/3_components/nav-footer.twig" with navFooter only %}
+  </div>
+
+  <div class="wrapper global-footer__row">
+    <div class="logo">
+      {% if logo_link %}
+      <a href="{{ logo_link }}" aria-label="Takeda" target="_blank" rel="noopener">
+      {% endif %}
+
+      {% block footer_logo %}
+        <img src="{{ path_to_gnorm_build }}/images/logo/logo-takeda.svg" alt="Takeda Pharmaceuticals">
+      {% endblock %}
+
+      {% if logo_link %}
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="cookie-settings">
+      {% if onetrust_dds is not empty %}
+        <!-- OneTrust Cookies Settings button -->
+        <button id="ot-sdk-btn" class="btn btn--sm ot-sdk-show-settings {% if color_class %}{{ color_class }}{% endif %}" type="button">Cookie Settings</button>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="wrapper global-footer__row">
+    {% block footer_copy %}
+    <p>
+      All trademarks are property of their respective owners. <br>
+      &copy;2022 Takeda Pharmaceuticals U.S.A., Inc. All rights reserved. <br>
+      <span class="end-matter-code">05/21 USO-IXA-0186</span>
+    </p>
+    {% endblock %}
+  </div> #}
+</footer>
+
+{% block global_scripts %}
+<!-- Global script includes -->
+<script src="scripts/app.built.js" async></script>
+{% endblock %}

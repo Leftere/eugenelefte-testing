@@ -1,0 +1,73 @@
+.accordion--study {
+  --studyacc-icon-color: var(--color-secondary);
+  --studyacc-heading-color: var(--color-primary);
+  appearance: none;
+
+  .summary {
+    appearance: none;
+    cursor: pointer;
+    list-style: none;
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &::marker {
+      display: none;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      .summary__heading {
+        text-decoration: underline;
+      }
+    }
+
+    .icon {
+      color: var(--studyacc-icon-color);
+      height: 2.4rem;
+      margin-inline-end: 1rem;
+      vertical-align: middle;
+      width: 2.4rem;
+
+      .icon {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .icon.open {
+      display: none;
+    }
+
+    .icon.closed {
+      display: inline-block;
+    }
+
+    &__inner {
+      align-items: flex-start;
+      display: flex;
+    }
+
+    &__heading {
+      color: var(--studyacc-heading-color);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &[open] {
+    .summary {
+      .icon.open {
+        display: inline-block;
+      }
+
+      .icon.closed {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+.isi {
+  --isi-bg-color: var(--color-white);
+  --isi-bar-bg-color: var(--color-primary);
+  --isi-bar-fg-color: var(--color-primary-contrast);
+  --isi-heading-color: var(--color-primary);
+  --isi-box-border-color: var(--color-black);
+  @include font-size(14);
+  padding-block: 2.5rem;
+
+  @include breakpoint($large-tablet) {
+    padding: 2.5rem;
+  }
+
+  &__inner {
+    position: relative;
+
+    @include breakpoint($large-tablet) {
+      display: grid;
+      gap: 1rem 8rem;
+      grid-template-areas: 'sidebar content';
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+
+    h3 {
+      @extend %h4;
+      @include font-size(14);
+    }
+
+    ul {
+      padding-inline-start: 1.5rem;
+    }
+
+    li {
+      padding-block-start: .4rem;
+    }
+  }
+
+  &__sidebar--inner {
+    position: relative;
+
+    &:after {
+      @include breakpoint($large-tablet) {
+        background-color: var(--color-primary);
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: -4rem;
+        top: 0;
+        width: 1px;
+      }
+    }
+  }
+
+  &__heading {
+    @extend %h3;
+    @include font-size(18);
+    color: var(--isi-heading-color);
+    font-weight: 700;
+    grid-area: content;
+    margin-block-start: 0;
+  }
+
+  &__content {
+    grid-area: content;
+
+    ul {
+      padding-inline-start: 1.5rem;
+    }
+
+    ul ul {
+      list-style-type: '-';
+
+      li {
+        padding-inline-start: .5em;
+      }
+    }
+
+    li {
+      padding-block-start: .4rem;
+    }
+
+    .isi__box {
+      border: 2px solid var(--isi-box-border-color);
+      margin-block-end: 1rem;
+      padding-inline: 1.5rem 2.4rem;
+    }
+
+    h3 {
+      @extend %h4;
+      @include font-size(14);
+      margin-block-end: .8em;
+    }
+  }
+
+  &__info {
+    grid-column-start: 2;
+  }
+
+  &.isi--fixed {
+    background-color: var(--isi-bg-color);
+    bottom: 0;
+    display: block;
+    max-height: 20vh; // use this if the entire sticky isi needs to be 20vh
+    max-height: calc(20vh + var(--barHeight)); // use this if the visible _content_ needs to be 20vh tall, not just the entire el
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    transform: translateY(100%);
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    will-change: transform;
+    z-index: 1;
+
+    &.isi--has-box {
+      max-height: calc(25vh + var(--barHeight));
+    }
+
+    &.visible {
+      transform: translateY(0);
+      visibility: visible;
+
+      &.scrolled {
+        transform: translateY(100%) translateY(calc(-1 * var(--barHeight, 50px)));
+
+        &.isi--has-box {
+          transform: translateY(100%) translateY(calc(-1 * var(--isiHeight, 20vh)));
+        }
+      }
+    }
+
+    .isi__bar {
+      background-color: var(--isi-bar-bg-color);
+      color: var(--isi-bar-fg-color);
+      padding: 1em;
+
+      .wrapper {
+        align-items: center;
+        display: flex;
+        padding-inline: 0;
+        position: relative;
+
+        @include breakpoint($large-tablet) {
+          justify-content: center;
+        }
+      }
+
+      .isi__heading {
+        margin-inline-end: 3rem;
+      }
+    }
+
+    .isi__expand {
+      @include font-size(20);
+      align-items: center;
+      color: currentColor;
+      display: flex;
+      font-weight: 700;
+      margin-inline: .5em;
+      position: absolute;
+      right: 0;
+      text-decoration: none;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include breakpoint($large-tablet) {
+        @include font-size(14, 19);
+      }
+
+      span {
+        margin-right: 1ch;
+
+        @include breakpoint(max-width $large-tablet - 1) {
+          @include visually-hidden;
+        }
+      }
+
+      &:focus,
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .isi__inner {
+      padding-block: 1rem;
+      padding-inline: 1em;
+
+      @include breakpoint($large-tablet) {
+        gap: 1rem 8rem;
+        padding-block: 0;
+      }
+    }
+
+    .isi__heading {
+      color: var(--color-primary-contrast);
+      grid-row: 1;
+      margin-block: 0;
+    }
+
+    .isi__sidebar,
+    .isi__content {
+      grid-row-start: 2;
+    }
+  }
+}

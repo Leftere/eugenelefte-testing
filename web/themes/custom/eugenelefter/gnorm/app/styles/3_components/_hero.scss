@@ -1,0 +1,237 @@
+.hero {
+  --hero-bg-color: var(--color-white);
+  --hero-heading-color: var(--color-primary);
+  --hero-ref-color: var(--color-text);
+  --hero-color: var(--color-primary-dark);
+  background-color: var(--hero-bg-color);
+  color: var(--hero-color);
+  display: grid;
+  min-height: min(25rem, 25vh);
+  padding: 2.5rem 0;
+  position: relative;
+
+  &--alt {
+    overflow: hidden;
+  }
+}
+
+.hero__background {
+  inset: 0;
+  position: absolute;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+
+    @include breakpoint($large-tablet) {
+      object-position: right;
+    }
+  }
+}
+
+.hero__inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+  @include breakpoint($large-tablet) {
+    text-align: left;
+  }
+}
+
+.hero__content {
+  max-width: 900px;
+
+  @include breakpoint($large-tablet) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-block: 3rem;
+  }
+
+  .hero--alt & {
+    flex-shrink: 0;
+  }
+}
+
+.hero__content-wrapper {
+  .hero.flex & {
+    @include breakpoint($large-tablet) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.hero__heading {
+  color: var(--hero-heading-color);
+  font-weight: 300;
+  margin-block: 0;
+}
+
+.hero__subheading {
+  color: var(--hero-color);
+  margin-block-start: .5em;
+
+  sup {
+    @include font-size(7.5);
+
+    @include breakpoint($large-tablet) {
+      @include font-size(10);
+    }
+  }
+}
+
+.hero__cta {
+  margin-block: 5rem;
+  width: 100%;
+
+  @include breakpoint($large-tablet) {
+    margin-block: 3rem;
+  }
+
+  .hero & {
+    text-align: center;
+  }
+
+  .hero.hero--not-centered & {
+    text-align: left;
+  }
+}
+
+.hero__reference {
+  @include font-size(10, 12);
+  color: var(--hero-ref-color);
+  text-align: left;
+
+  @include breakpoint($large-tablet) {
+    @include font-size(14, 16);
+  }
+}
+
+.hero.hero--alt {
+  padding-block: 4rem 0;
+
+  @include breakpoint($large-tablet) {
+    padding-block: 0;
+  }
+
+  .hero__inner {
+    padding-inline: unset;
+
+    @include breakpoint($large-tablet) {
+      align-items: center;
+      flex-flow: row;
+      padding-inline: 1.5rem 0;
+    }
+  }
+
+  .hero__content {
+    padding-block: unset;
+    padding-inline: 1.5rem;
+    @include breakpoint($large-tablet) {
+      padding-inline: unset;
+    }
+  }
+
+  .hero__image {
+    overflow: hidden;
+    width: 100%;
+
+    @include breakpoint($large-tablet) {
+      width: auto;
+    }
+
+    @include breakpoint($desktop) {
+      transform: translateX(5vw);
+    }
+
+    img {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}
+
+.hero.hero--alunbrig-home {
+  border-top: 0;
+  display: flex;
+  flex-flow: column;
+  padding-block: 0;
+
+  @include breakpoint($desktop) {
+    aspect-ratio: 5/2;
+    display: grid;
+    margin: auto;
+    max-width: 150rem;
+    position: relative;
+  }
+
+  .hero__background {
+    order: 1;
+    position: relative;
+
+    @include breakpoint($desktop) {
+      position: absolute;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .hero__inner {
+    --hero-color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+
+    @include breakpoint($desktop) {
+      background-image:
+        linear-gradient(90deg, #fff 55%, rgb(255 255 255 / 0%) 72%, rgb(255 255 255 / 0%)),
+        linear-gradient(139deg, #fff 60%, rgb(255 255 255 / 0%) 87%, rgb(255 255 255 / 0%));
+      inset: 1.5rem auto auto 0;
+      max-width: 50rem;
+      position: absolute;
+      width: 100%;
+    }
+
+    &:before {
+      background-image: linear-gradient(to right, #b7cb2a, #5db66c, #03a0ac);
+      content: '';
+      height: 5px;
+      inset: auto 0 0 0;
+      position: absolute;
+
+      @include breakpoint($desktop) {
+        background-image: linear-gradient(to top, #b7cb2a, #5db66c, #03a0ac);
+        height: auto;
+        inset: 0 auto 0 0;
+        width: 5px;
+      }
+    }
+  }
+
+  .hero__content {
+    background-color: var(--color-white);
+    max-width: 100%;
+    padding: 1.5rem;
+
+    @include breakpoint($desktop) {
+      background-color: transparent;
+      max-width: 35rem;
+      padding-block: 0;
+      padding-inline-start: 2.5rem;
+    }
+  }
+
+  .hero__subheading {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,12 @@
+<aside class="pullquote">
+  <div class="pullquote__wrapper wrapper">
+    {% if image %}
+    <div class="pullquote__image">
+      <img src="{{ image.src }}" loading="lazy" alt="{% if image.alt %}{{ image.alt }}{% endif %}">
+    </div>
+    {% endif %}
+    <blockquote class="pullquote__text">
+      {{ text|raw }}
+    </blockquote>
+  </div>
+</aside>

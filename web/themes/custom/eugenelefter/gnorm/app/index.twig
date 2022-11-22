@@ -1,0 +1,111 @@
+{# index.twig #}
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+  {% include "@includes/3_components/hero.twig" with hero %}
+
+  <div class="template-listing">
+    <div class="wrapper">
+      {% if templates %}
+        <p>Key</p>
+        <ul>
+          <li>
+            <svg role="img" focusable="false" aria-hidden="true" class="icon status-icon icon-square">
+              <use xlink:href="#icon-square"/>
+            </svg>
+            = Not Started</li>
+          <li>
+            <svg role="img" focusable="false" aria-hidden="true" class="icon status-icon icon-spinner">
+              <use xlink:href="#icon-spinner"/>
+            </svg>
+            = In Progress</li>
+          <li>
+            <svg role="img" focusable="false" aria-hidden="true" class="icon status-icon icon-check-square">
+              <use xlink:href="#icon-check-square"/>
+            </svg>
+            = Complete</li>
+        </ul>
+
+        <h2>Layouts</h2>
+        <ul>
+          {% for item in templates %}
+            <li class="template {{ item.status }}">
+              {% if item.status %}
+                {% set itemIcon = null %}
+
+                {% if item.status == 'not-started' %}
+                  {% set itemIcon = 'square' %}
+                {% elseif item.status == 'in-progress' %}
+                  {% set itemIcon = 'spinner' %}
+                {% elseif item.status == 'complete' %}
+                  {% set itemIcon = 'check-square' %}
+                {% endif %}
+
+                <svg role="img" focusable="false" class="status-icon icon-{{ item.status }}">
+                  <use xlink:href="#icon-{{ itemIcon }}"/>
+                </svg>
+
+              {% endif %}
+
+              {% if item.url is not defined %}
+                <p>{{ item.title }}</p>
+              {% elseif item.datestamped %}
+                {% set href = item.url|replace({ '%date%': 'now'|date('Y-m-d') }) %}
+                <a href="{{ href }}">{{ item.title }}</a>
+              {% else %}
+                <a href="{{ item.url }}" {% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+              {% endif %}
+
+              {% if item.variation and item.variation != '#' %}
+                <div>
+                  <small>
+                    Variations:
+                    {% for inneritem in item.variation %}
+                      {% if not loop.first %} | {% endif %}
+                      <a href="{{ inneritem.link }}" target="_blank" rel="noopener">{{ inneritem.text }}</a>
+                    {% endfor %}
+                  </small>
+                </div>
+              {% endif %}
+
+              {% if item.desktop and item.desktop != '#' or item.mobile and item.mobile != '#'%}
+                <div>
+                  <small>
+                    Designs: {% if item.desktop and item.desktop != '#' %}<a href="{{ item.desktop }}" target="_blank" rel="noopener">desktop</a>{% endif %}
+                    {% if item.mobile and item.mobile != '#' %}| <a href="{{ item.mobile }}" target="_blank" rel="noopener">mobile</a>{% endif %}
+                  </small>
+                </div>
+              {% endif %}
+
+              {% if item.wireframe and item.wireframe != '#' %}
+                <div>
+                  <small>
+                    <a href="{{ item.wireframe }}" target="_blank" rel="noopener">Wireframe</a>
+                  </small>
+                </div>
+              {% endif %}
+
+              {% if item.annotations and item.annotations != '#' %}
+                <div>
+                  <small>
+                    <a href="{{ item.annotations }}" target="_blank" rel="noopener">Functional Annotations</a>
+                  </small>
+                </div>
+              {% endif %}
+
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+
+      <h2>Utility</h2>
+      <ul>
+        {% for item in utilityLinks %}
+          <li><a href="{{ item.link }}" {% if item.external == true %}target="_blank" rel="noopener"{% endif %}> {{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% include "@images/icon-sprite--styleguide.svg" %}
+{% endblock %}

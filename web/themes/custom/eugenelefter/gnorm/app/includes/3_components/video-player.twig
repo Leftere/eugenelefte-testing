@@ -1,0 +1,58 @@
+<div class="video-player" data-module="VideoPlayer">
+  <div class="video-player__wrapper">
+    <div class="video-player__media">
+      {% block video %}
+        <div
+          class="video-js"
+          id="{{ media.id }}"
+          data-video-id="{{ media.id }}"
+          data-account="{{ data_account_id }}"
+          data-player="{{ data_player_id }}"
+          data-embed="default"
+          data-application-id
+          preload="metadata"
+          controls
+        ></div>
+      {% endblock %}
+    </div>
+
+    <div class="video-player__info">
+      {% if heading %}
+        <div class="video-player__heading">
+          <h2>{{ heading|raw }}</h2>
+        </div>
+      {% endif %}
+
+      {% if description %}
+        {{ description|raw }}
+      {% endif %}
+
+      {% if chapters %}
+        <ul class="video-player__chapters">
+          {% for chapter in chapters %}
+            <li>
+              <button type="button" class="video-player__chapter" data-timestamp="{{ chapter.time }}">
+                <strong>Chapter {{ loop.index }}</strong>:{{" "}}{{ chapter.title|raw }}
+              </button>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if watchButton %}
+        <button type="button" class="video-player__watch-button">Watch Video &gt;</button>
+      {% endif %}
+
+      {% if references %}
+        {% include "@includes/3_components/reference-text.twig" with references %}
+      {% endif %}
+    </div>
+  </div>
+
+  {% if transcript %}
+    <div class="video-player__transcript">
+      {% include "@includes/3_components/text-accordion.twig" with transcript %}
+    </div>
+  {% endif %}
+
+</div>

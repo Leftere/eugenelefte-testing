@@ -1,0 +1,32 @@
+:root {
+  --imgblock-caption-color: var(--color-gray-light);
+}
+
+.image-block {
+  margin: auto;
+  max-width: 45rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+
+  &__figure {
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+
+    &--has-mask {
+      img {
+        clip-path: circle(50%);
+      }
+    }
+
+    figcaption {
+      color: var(--imgblock-caption-color);
+      font-weight: 700;
+      margin-block-start: 3rem;
+      text-align: center;
+    }
+  }
+}
+

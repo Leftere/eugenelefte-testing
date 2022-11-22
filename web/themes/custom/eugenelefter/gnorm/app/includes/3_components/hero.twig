@@ -1,0 +1,37 @@
+<header class="hero{% if class %} {{class}}{% endif %}" {% if data_align %}data-align="{{data_align}}"{% endif %}>
+  {% if background %}
+  <picture class="hero__background">
+    <source srcset="{{ background.desktop }}" media="(min-width:800px)">
+    <source srcset="{{ background.mobile }}">
+    <img src="{{ background.mobile }}" alt="">
+  </picture>
+  {% endif %}
+
+  <div class="hero__inner wrapper">
+    <div class="hero__content">
+      <h1 class="hero__heading">{{ title|raw }}</h1>
+
+      {% if subheading %}
+        <div class="hero__subheading lede">
+          {{ subheading|raw }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if cta %}
+    <div class="hero__cta">
+      {% include "@includes/2_pieces/btn.twig" with cta %}
+    </div>
+    {% endif %}
+
+    {% if references %}
+    <div class="hero__reference">
+      {{ references|raw }}
+    </div>
+    {% endif %}
+  </div>
+</header>
+
+{% block postHeroDecorator %}
+  <div class="hero-decorator"></div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{
+  "title": "1.2 MOA",
+  "hero": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "<strong>NINLARO<sup>&reg;</sup> (ixaomib) Mechanism of Action</strong>",
+    "subheading" :"<p>NINLARO is the first oral proteasome inhibitor that is taken as part of a triplet, all-oral regimen.<sup>1-3*</sup></p>",
+    "references": "<p>*The NINLARO regimen includes NINLARO+lenalidomide+dexamethasone.</p>"
+  },
+  "dataViz1": {
+    "bgColor": true,
+    "image": {
+      "src": "images/charts/4.1_trials.svg",
+      "srcSmall": "images/charts/4.1_trials-mobile.svg",
+      "alt": ""
+    }
+  },
+  "twoCardsEnclosed": [
+    {
+      "class": "card--enclosed",
+      "title": "NINLARO patient profiles",
+      "description": "<p>Different patient types are appropriate for treatment with NINLARO.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Discover Patient Profiles",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "class": "card--enclosed",
+      "title": "NINLARO clinical trial data",
+      "description": "<p>The TOURMALINE-MM1 trial evaluated long-term treatment with the all-oral NINLARO regimen.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Find Trial Results",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ],
+  "text1": "<p>NINLARO is a targeted, potent, reversible proteasome inhibitor.<sup>1</sup></p>",
+  "text2": "<p><strong>Effects of proteasome inhibition with NINLARO</strong></p><ul><li>NINLARO demonstrated in vitro cytotoxicity against myeloma cells from patients who had relapsed after multiple prior therapies<sup>1</sup></li><li>The combination of NINLARO+lenalidomide demonstrated synergistic cytotoxic effects in multiple myeloma cell lines<sup>1</sup></li></ul>",
+  "text3": "<p><strong>Absorption and distribution</strong></p><ul><li>After NINLARO oral administration, the median time to achieve peak plasma concentrations was 1 hour<sup>1</sup><li>The mean absolute oral bioavailability was 58%, based on population PK analysis<sup>1</sup></li></ul><p><strong>Metabolism and elimination</strong></p><ul><li>The terminal half-life of NINLARO is 9.5 days<sup>1</sup></li><li>There was no clinically meaningful effect of age, sex, body surface area, or race on the clearance of NINLARO based on population PK analysis<sup>1</sup></ul>"
+}

@@ -1,0 +1,35 @@
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+
+{% include "@includes/3_components/hero.twig" with hero %}
+
+{% include "@includes/3_components/reference-text.twig" with {
+  text: text
+} only %}
+
+{% include "@includes/3_components/primary-button.twig" with {
+  cta: {
+    url: "#test",
+    text: "Download Here2Assist Brochure",
+    icon: "icon-download"
+  }
+} %}
+
+<div class="wrapper">
+  {% include "@includes/3_components/card-container.twig" with {
+    cards: assetDownloadCard,
+    type: "three-across"
+  } %}
+</div>
+
+{% include "@includes/3_components/reference-text.twig" with {
+  text: text2
+} only %}
+
+{% include "@includes/3_components/card-container.twig" with {
+  cards: twoCardsEnclosed,
+  type: "two-across"
+} %}
+
+{% endblock %}

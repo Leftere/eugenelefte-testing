@@ -1,0 +1,444 @@
+{
+  "title": "Components",
+  "cssLinks": [
+    "/themes/custom/tbsd_sub/styles/theme.css"
+  ],
+  "heroCampaign": {
+    "image": {
+      "mobile": "images/lighthouse-mobile.png",
+      "tablet": "images/lighthouse-tablet.png",
+      "desktop": "images/lighthouse-desktop.png"
+    },
+    "title": "<strong>The benefits of long-term proteasome inhibition with NINLARO<sup>&reg;</sup> (ixaomib)</strong>",
+    "subheading": "<p>NINLARO is the first efficacious, all-oral therapy for patients with multiple myeloma after one prior therapy.</p>"
+  },
+  "hero": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "NINLARO<sup>&reg;</sup> (ixaomib) Provides Durable Strength With <strong>Long-term* Proteasome Inhibition</strong><sup>1-4</sup>",
+    "subheading": "<p>NINLARO is the first efficacious, all-oral triple regimen<sup>†</sup> for patients with multiple myeloma after one prior therapy.<sup>1,5,6</sup> NINLARO has been clinically proven to provide a broad range of patients with a deep, durable response in their multiple myeloma treatment.<sup>1-3,7-9</sup></p>",
+    "cta": {
+      "classes": [
+        "color--secondary"
+      ],
+      "url": "#test",
+      "text": "Explore Durable Efficacy",
+      "icon": "icon-chevron-right"
+    },
+    "references": "<p>*Defined as treatment to disease progression or unacceptable toxicity.<br>†The NINLARO regimen includes NINLARO+lenalidomide+dexamethasone.</p>"
+  },
+  "heroFlex": {
+    "class": "flex",
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "<strong>NINLARO<sup>&reg;</sup> (ixaomib)<br /> Real-World Studies</strong>",
+    "subheading": "<p>NINLARO has a wealth of real-world evidence (RWE) across a range of patient populations<sup>1-5</sup></p>",
+    "cta": {
+      "classes": [
+        "color--secondary"
+      ],
+      "url": "#test",
+      "text": "Download RWE Brochure",
+      "icon": "icon-chevron-right"
+    }
+  },
+  "heroNoButton": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "<strong>NINLARO<sup>&reg;</sup> (ixaomib) Demonstrated<br /> Clinical Efficacy With Durable, Prolonged PFS<sup>1,2</sup></strong>",
+    "subheading": "<p>TOURMALINE-MM1 evaluated long-term<sup>*</sup> treatment with the all-oral NINLARO regimen as part of a global,<br /> phase 3, randomized, double-blind, placebo-controlled trial.<sup>1-4</sup></p>",
+    "references": "<p>*Defined as treatment to disease progression or unacceptable toxicity.</p>"
+  },
+  "anchorLinks": {
+    "items": [
+      {
+        "link": "#",
+        "text": "Study Results"
+      },
+      {
+        "link": "#",
+        "text": "Safety Profile"
+      },
+      {
+        "link": "#",
+        "text": "Study Design"
+      }
+    ]
+  },
+  "structuredIcons": {
+    "items": [
+      {
+        "image": {
+          "src": "images/rx-clipboard-icon.png",
+          "alt": "Rx clipboard icon"
+        },
+        "text": "<p>For most people, multiple myeloma will eventually return. When multiple myeloma has come back and can be detected by advanced lab tests and imaging it is known as a relapse.</p>"
+      },
+      {
+        "image": {
+          "src": "images/clipboard-icon.png",
+          "alt": "clipboard icon"
+        },
+        "heading": "Refactory disease",
+        "text": "<p>Multiple myeloma may have never responded or may stop responding to a particular treatment.</p>"
+      },
+      {
+        "image": {
+          "src": "images/dark-blue-book-icon.png",
+          "alt": "dark blue book icon"
+        },
+        "heading": "Treatment reselection",
+        "text": "<p>Together, you and your healthcare provider will determine what the next multiple myeloma treatment is that makes sense for you.</p>"
+      },
+      {
+        "image": {
+          "src": "images/light-blue-book-icon.png",
+          "alt": "light blue book icon"
+        },
+        "text": "<p>Together, you and your healthcare provider will determine what the next multiple myeloma treatment is that makes sense for you.</p><p>Multiple myeloma may have never responded or may stop responding to a particular treatment.</p>"
+      }
+    ]
+  },
+  "ctaComponent": {
+    "cta": {
+      "url": "#test",
+      "text": "Discover more NINLARO insight videos",
+      "icon": "icon-chevron-right"
+    }
+  },
+  "stackedAccordion": {
+    "items": [
+      {
+        "button": "Thrombocytopenia",
+        "content": "<p><strong>THROMBOCYTOPENIA</strong></p><p><strong>Platelet count &lt;30,000/mm<sup>3</sup></strong></p><ul><li><strong>Withhold NINLARO and lenalidomide</strong> until platelet count is at least 30,000/mm<sup>3</sup></li><li>Following recovery, <strong>resume lenalidomide at the next lower dose</strong> according to its Prescribing Information and <strong>resume NINLARO at its most recent</strong></li></ul><p><strong>If paltelet count falls to &lt;30,000/mm<sup>3</sup> again</strong></p><ul><li><strong>Withhold NINLARO and lenalidomide</strong> until platelet count is at least 30,000/mm<sup>3</sup></li><li>Following recovery, <strong>resume NINLARO at the next lower dose</strong> and <strong>resume lenalidomide at its most recent dose*</strong></li></ul>"
+      },
+      {
+        "button": "Neutropenia",
+        "content": "<p><strong>NEUTROPENIA</strong></p><p><strong>Absolute neutrophil count &lt;500/mm<sup>3</sup></strong></p><ul><li><strong>Withhold NINLARO and lenalidomide</strong> until absolute neutrophil count is at least 500/mm<sup>3</sup>. Consider adding G-CSF as per clinical guidelines</li><li>Following recovery, <strong>resume lenalidomide at the next lower dose</strong> according to its Prescribing Information and <strong>resume NINLARO at its most recent dose</strong></li></ul><p><strong>If absolute neutrophil falls to &lt;500/mm<sup>3</sup> again</strong></p><ul><li><strong>Withhold NINLARO and lenalidomide</strong> until neutrophil count is at least 500/mm<sup>3</sup></li><li>Following recovery, <strong>resume NINLARO at the next lower dose</strong> and <strong>resume lenalidomide at its most recent dose*</strong></li></ul>"
+      },
+      {
+        "button": "Rash",
+        "content": "<p><strong>RASH</strong></p><p><strong>Grade<sup>†</sup> 2 or 3</strong></p><ul><li><strong>Withhold lenalidomide</strong> until rash recovers to grade 1 or lower</li><li>Following recovery, <strong>resume lenalidomide at the next lower dose</strong> according to its Prescribing Information</li></ul><p><strong>If grade 2 or 3 rash occurs again</strong></p><ul><li><strong>Withhold NINLARO and lenalidomide</strong> until rash recovers to grade 1 or lower</li><li>Following recovery, <strong>resume NINLARO at the next lower dose</strong> and <strong>resume lenalidomide at its most recent dose*</strong></li></ul> <p><strong>Grade 4</strong></p><ul> <li><strong>Discontinue</strong> treatment regimen</li></ul>"
+      },
+      {
+        "button": "Peripheral Neuropathy",
+        "content": "<p><strong>PERIPHERAL NEUROPATHY</strong></p><p><strong>Grade 1 with pain or grade 2</strong></p><ul> <li><strong>Withhold NINLARO</strong> until peripheral neuropathy recovers to grade 1 or lower without pain or patient's baseline</li><li>Following recovery, <strong>resume NINLARO at its most recent dose</strong></li></ul> <p><strong>Grade 2 with pain or grade 3</strong></p><ul><li><strong>Withhold NINLARO.</strong> Toxicities should, at the physician's discretion, generally recover to patient's baseline condition or grade 1 or lower prior to resuming NINLARO</li><li>Following recovery, <strong>resume NINLARO at the next lower dose</strong></li></ul> <p><strong>Grade 4</strong></p><ul> <li><strong>Discontinue</strong> treatment regimen</li></ul>lenalidomide at its most recent dose*</strong></li></ul><p><strong>Grade 4</strong></p><ul><li><strong>Discontinue</strong> treatment regimen</li></ul>"
+      },
+      {
+        "button": "Other NonHematologic Toxicities",
+        "content": "<p><strong>OTHER NONHEMATOLOGIC TOXICITIES</strong></p><p><strong>Grade 3 or 4</strong></p><ul><li><strong>Withhold NINLARO.</strong> Toxicities should, at the physician's discretion, generally recover to patient's baseline condition or grade 1 or lower prior to resuming NINLARO</li><li><strong>If attributable to NINLARO, resume NINLARO at the next lower dose following recovery</strong></li></ul>"
+      }
+    ]
+  },
+  "imageContent": {
+    "imageBlock": {
+      "hasMask": true,
+      "image": {
+        "src": "images/card.png",
+        "alt": ""
+      },
+      "figcaption": "Hypothetical Patient"
+    },
+    "ctaBlock": {
+      "title": "NINLARO could help Bruce&mdash;",
+      "description": "<p>The TOURMALINE-MM1 trial evaluated long-term treatment with the all-oral NINLARO regimen, demonstrating a 6-month median PFS benefit.<sup>1,2</sup></p>",
+      "cta": {
+        "url": "#test",
+        "text": "Discover Clinical Data",
+        "icon": "icon-chevron-right"
+      }
+    },
+    "content": {
+      "heading": "<h3>Frank, 73 years old, Received prior PI therapy</h3>",
+      "body": "<p>Frank has received 3 cycles of VELCADE-based induction with no evidence of progression.</p><p><strong>Reason for clinic visit</strong></p><ul><li>Monthly follow-up visit; has completed 3 cycles of VELCADE-based induction, M protein levels have been increasing slowly</li></ul><p><strong>Diagnosis</strong></p><ul><li>Diagnosed with multiple myeloma 3 months ago; R-ISS stage II</li></ul><p><strong>Treatment history</strong></p><ul><li>Does not meet transplant-eligibility criteria</li><li>First line of therapy was 3-cycles of VELCADE+lenalidomide+dexamethasone</li><li>Patient does not have evidence of progressive disease after 3 treatment cycles</li><li>Prior diagnosis of hypertension and moderate anemia</li></p>"
+    }
+  },
+  "referenceList": "<strong>Primary endpoint:</strong> PFS, according to 2011 IMWG criteria, was assessed every 4 weeks until disease progression by a blinded IRC and was based on central laboratory results<sup>1,2</sup><strong>Key secondary endpoints:</strong> OS and OS in del(17p)<sup>1,2</sup><strong>Other secondary endpoints:</strong> ORR and PFS in patients with high-risk cytogenetics§ and safety<sup>1,2</sup>",
+  "referenceText": {
+    "text": "<p>†Defined as treatment to disease progression or unacceptable toxicity.<br /> ‡Stratification 1 vs 2 or 4 prior therapies; PI exposed vs PI naive; and ISS stage I or II vs III.</p>"
+  },
+  "iconCards": {
+    "items": [
+      {
+        "image": {
+          "src": "images/icons/icon-pill-hand.svg",
+          "alt": ""
+        },
+        "text": "Adverse Reactions"
+      },
+      {
+        "image": {
+          "src": "images/icons/icon-pill-hand.svg",
+          "alt": ""
+        },
+        "text": "Patient fatigue with ongoing visits to receive infusions"
+      },
+      {
+        "image": {
+          "src": "images/icons/icon-pill-hand.svg",
+          "alt": ""
+        },
+        "text": "Restricted Mobility"
+      },
+      {
+        "image": {
+          "src": "images/icons/icon-pill-hand.svg",
+          "alt": ""
+        },
+        "text": "Desire to remain outside of a hospital or clinic"
+      }
+    ]
+  },
+  "twoCards": [
+    {
+      "title": "NINLARO Dosing",
+      "description": "<p>Find the dosing schedule for the NINLARO all-oral triple regimen and information on dose modifications.</p>",
+      "image": {
+        "src": "images/icons/icon-pill-hand.svg",
+        "alt": "Pill in a hand"
+      },
+      "cta": {
+        "url": "#test",
+        "text": "Get Dosing Info",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "Here2Assist",
+      "description": "<p>Your connection for coverage support, financial assistance, and educational resources.</p>",
+      "image": {
+        "src": "images/logo/logo-h2a.svg",
+        "alt": "Here2Assist logo"
+      },
+      "cta": {
+        "url": "#test",
+        "text": "Get Program Details",
+        "icon": "icon-chevron-right"
+      },
+      "link": {
+        "url": "#link",
+        "text": "Download enrollment form",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ],
+  "threeCards": [
+    {
+      "title": "NINLARO patient profiles",
+      "description": "<p>Different patient types may benefit from NINLARO therapy.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Discover Appropriate Patients",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "NINLARO real-world studies",
+      "description": "<p>Real-world evidence can help bridge the gap between clinical trials and clinical practice.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Get Real-world Study Results",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "NINLARO patient resources",
+      "description": "<p>Resources for your practice to help support patients starting or continuing NINLARO.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Find Patient Resources",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ],
+  "twoCardsEnclosed": [
+    {
+      "cardClass": "card--enclosed",
+      "title": "NINLARO dosing",
+      "description": "<p>Find the dosing schedule for the NINLARO all-oral triple regimen and information on dose modifications.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Get Dosing Info",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "cardClass": "card--enclosed",
+      "title": "NINLARO real-world studies",
+      "description": "<p>Real-world evidence can help bridge the gap between clinical trials and clinical practice.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Get Real-World Study Results",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ],
+  "testimonial": {
+    "quote": "Yes, quality of life measures are important. The good news is that the ALK inhibitors we have now as first-line tratment options <em><strong>can help these patients achieve longer progression-free time</strong></em>",
+    "citation": "<strong>VIOLA W. ZHU, MD, PhD</strong><br>Associate Clinical Professor of Medicine, University of California-Irvine",
+    "image": {
+      "src": "https://placehold.jp/f4f4f4/333333/150x180.png"
+    }
+  },
+  "pullquote": {
+    "image": {
+      "src": "images/NINLARO.svg",
+      "alt": "pill icon"
+    },
+    "text": "<p>Treatment should be continued until disease progression or unacceptable toxicity</p>"
+  },
+  "pullquoteStat": {
+    "image": {
+      "src": "images/21percent.svg",
+      "alt": "21 percent"
+    },
+    "text": "of patients who received the NINLARO regimen had high-risk cytogenetics<sup>1</sup>"
+  },
+  "richTextContent": {
+    "content": "<p>Praesent <strong>venenatis</strong> metus at tortor pulvinar <a href=\"https://www.google.com\">Curabitur</a> varius.</p><ul><li>Praesent</li><li>Nullam vel</li></ul><p><strong>In consectetuer</strong>. <em>Nulla neque</em></p><p>sagittis<sup>123</sup> eget<sub>456</sub>, iaculis quis.</p><ol><li>Suspendisse</li><li>augue</li></ol><p class=\"text-align-center\">Vivamus elit ac nisl.</p><p class=\"text-align-right\">Sed lectus. quis orci.</p>"
+  },
+  "assetDownloadCards": [
+    {
+      "cardClass": "card--asset-download",
+      "image": {
+        "src": "https://via.placeholder.com/50",
+        "alt": "This is an alt"
+      },
+      "title": "Treatment Calendar",
+      "description": "<p>Have your patients track their individual treatment schedule by filling out this calendar</p>",
+      "cta": {
+        "url": "images/test.pdf",
+        "text": "Download the PDF",
+        "icon": "icon-download",
+        "download": true
+      }
+    },
+    {
+      "cardClass": "card--asset-download",
+      "image": {
+        "src": "https://via.placeholder.com/50",
+        "alt": ""
+      },
+      "title": "Treatment Calendar",
+      "description": "<p>Have your patients track their individual treatment schedule by filling out this calendar</p>",
+      "cta": {
+        "url": "images/test.pdf",
+        "text": "Download the PDF",
+        "icon": "icon-download",
+        "download": true
+      }
+    },
+    {
+      "cardClass": "card--asset-download",
+      "image": {
+        "src": "https://via.placeholder.com/50",
+        "alt": ""
+      },
+      "title": "Treatment Calendar",
+      "description": "<p>Have your patients track their individual treatment schedule by filling out this calendar</p>",
+      "cta": {
+        "url": "images/test.pdf",
+        "text": "Download the PDF",
+        "icon": "icon-download",
+        "download": true
+      }
+    }
+  ],
+  "centeredCallout": {
+    "style": "callout--centered",
+    "heading": "<p>The NINLARO regimen provided long-term efficacy and manageable tolerability in the TOURMALINE-MM1 clinical trial<sup>1-5</sup></p>",
+    "links": [
+      {
+        "url": "#test",
+        "text": "Discover MM1 Efficacy",
+        "icon": "icon-chevron-right"
+      },
+      {
+        "url": "#test",
+        "text": "Discover MM1 Safety",
+        "icon": "icon-chevron-right"
+      }
+    ]
+  },
+  "contentColumns": [
+    {
+      "heading": "Strengths",
+      "content": "<p><strong>RWE has broader generalizability vs RCTs, reflecting the heterogeneity of patients treated in real-world clinical practice, including patients with<sup>7-9</sup>:</strong></p><ul><li>Comorbidities</li><li>Advanced age</li><li>Reduced performance status</li></ul><p><strong>RWE provides information on real-world treatment patterns<sup>7,8</sup></strong></p><ul><li>Dosing</li><li>Treatment duration</li><li>Resource use</li></ul><p><strong>Data from real-world clinical practice can supplement evidence from RCTs<sup>8,9</sup></strong></p><ul><li>Efficacy</li><li>Tolerability</li><li>Safety profile</li></ul><p><strong>RWE studies may be more time/cost-efficient<sup>8</sup></strong></p>"
+    },
+    {
+      "heading": "Weaknesses",
+      "content": "<p><strong>Heterogeneous data sets<sup>8</sup></strong></p><ul><li>Arising from heterogeneous clinical practice and documentation</li></ul><p><strong>Findings limited to data that are randomly available and can be susceptible to selection bias<sup>8,10</sup></strong></p><ul><li>Potential incompatibility of data from different sources</li><li>Less scrutiny and less uniformity in reporting or data processing/collection</li></ul><p><strong>Real-world data do not constitute a uniform assessment of efficacy under controlled conditions</strong></p><ul><li>Lack of well-characterized, balanced groups of patients in treatment arms<sup>8</sup></li><li>Not blinded or randomized<sup>8</sup></li><li>Potential lack of formal, defined end points (eg, use of time to next therapy as a proxy for PFS due to unavailability of data)<sup>7</sup></li></ul>"
+    },
+    {
+      "heading": "Third",
+      "content": "<p><strong>RWE has broader generalizability vs RCTs, reflecting the heterogeneity of patients treated in real-world clinical practice, including patients with<sup>7-9</sup>:</strong></p><ul><li>Comorbidities</li><li>Advanced age</li><li>Reduced performance status</li></ul><p><strong>RWE provides information on real-world treatment patterns<sup>7,8</sup></strong></p><ul><li>Dosing</li><li>Treatment duration</li><li>Resource use</li></ul><p><strong>Data from real-world clinical practice can supplement evidence from RCTs<sup>8,9</sup></strong></p><ul><li>Efficacy</li><li>Tolerability</li><li>Safety profile</li></ul><p><strong>RWE studies may be more time/cost-efficient<sup>8</sup></strong></p>"
+    }
+  ],
+  "transcript": {
+    "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac hendrerit quam, non convallis risus. Suspendisse imperdiet tincidunt tortor, et venenatis sem molestie nec. Curabitur ligula massa, porta eleifend vehicula vel, facilisis sit amet neque. Aliquam venenatis viverra nulla in iaculis. Maecenas id condimentum libero. Nunc venenatis, leo et ultrices placerat, ligula dui imperdiet ex, eu pellentesque lacus felis ac neque. Morbi aliquam lectus eu ex commodo, nec pretium elit vestibulum. Donec sit amet facilisis nisl, quis pretium dui. Donec venenatis, sapien ac dignissim condimentum, lectus odio finibus massa, eget scelerisque diam eros id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vulputate nec est at molestie. Maecenas sed ipsum nibh. Praesent pulvinar lobortis urna, nec consequat risus ullamcorper nec. Cras convallis est eget nibh tempor lacinia. In hac habitasse platea dictumst. Donec eu velit sit amet enim maximus aliquam sit amet quis ex.</p><p>Pellentesque placerat nec velit eget dapibus. Vestibulum suscipit volutpat mollis. Duis condimentum tincidunt nisi vel suscipit. Curabitur ac tempus tortor. Duis tristique libero sit amet justo tristique sagittis. Quisque faucibus lacus et justo pharetra tempus. Donec placerat tempor augue non egestas. Ut tristique cursus ipsum vitae interdum.</p><p>Aliquam congue vitae massa eget ornare. Nam at venenatis lectus. Duis odio sem, tempor ut magna sit amet, eleifend mattis eros. Pellentesque hendrerit ipsum a finibus mollis. Maecenas pulvinar ipsum eu justo fermentum, eget ullamcorper enim sodales. Mauris elementum justo nisi, fringilla hendrerit mi iaculis malesuada.</p>"
+  },
+  "isi": {
+    "hasBox": true,
+    "heading": "IMPORTANT SAFETY INFORMATION, INDICATION, AND USAGE",
+    "sidebar": {
+      "heading": "INDICATION AND USAGE",
+      "text": "<p>ICLUSIG<sup>&reg;</sup> (ponatinib) is a kinase inhibitor indicated for the treatment of adult patients with:</p><ul><li>Chronic phase (CP) chronic myeloid leukemia (CML) with resistance or intolerance to at least two prior kinase inhibitors.</li><li>Accelerated phase (AP) or blast phase (BP) CML or Philadelphia chromosome positive acute lymphoblastic leukemia (Ph+ ALL) for whom no other kinase inhibitors are indicated.</li><li>T315I-positive CML (chronic phase, accelerated phase, or blast phase) or T315I-positive Ph+ ALL.</li></ul><p><u>Limitations of Use:</u><br />ICLUSIG is not indicated and is not recommended for the treatment of patients with newly diagnosed CP‑CML.</p>"
+    },
+    "content": {
+      "heading": "IMPORTANT SAFETY INFORMATION",
+      "text": "<h3>WARNINGS AND PRECAUTIONS</h3><div class='isi__box'><p><strong>WARNING: ARTERIAL OCCLUSIVE EVENTS, VENOUS THROMBOEMBOLIC EVENTS, HEART FAILURE, and HEPATOTOXICITY</strong></p><p><strong><em>See full prescribing information for complete boxed warning.</em></strong></p><ul><li>Arterial occlusive events (AOEs), including fatalities, have occurred in ICLUSIG-treated patients. AOEs included fatal myocardial infarction, stroke, stenosis of large arterial vessels of the brain, severe peripheral vascular disease, and the need for urgent revascularization procedures. Patients with and without cardiovascular risk factors, including patients age 50 years or younger, experienced these events. Monitor for evidence of AOEs. Interrupt or discontinue ICLUSIG based on severity. Consider benefit-risk to guide a decision to restart ICLUSIG.</li><li>Venous thromboembolic events (VTEs) have occurred in ICLUSIG-treated patients. Monitor for evidence of VTEs. Interrupt or discontinue ICLUSIG based on severity.</li><li>Heart failure, including fatalities, occurred in ICLUSIG-treated patients. Monitor for heart failure and manage patients as clinically indicated. Interrupt or discontinue ICLUSIG for new or worsening heart failure.</li><li>Hepatotoxicity, liver failure and death have occurred in ICLUSIG-treated patients. Monitor liver function tests. Interrupt or discontinue ICLUSIG based on severity.</li></ul></div><h3>Arterial Occlusive Events (AOEs):</h3> <p>AOEs, including fatalities, have occurred in patients who received ICLUSIG in OPTIC and PACE. These included cardiovascular, cerebrovascular, and peripheral vascular events. The incidence of AOEs in OPTIC (45 mg → 15 mg) was 13% of 94 patients; 5% experienced Grade 3 or 4. In PACE, the incidence of AOEs was 26% of 449 patients; 14% experienced Grade 3 or 4. Fatal AOEs occurred in 2.1% of patients in OPTIC, and in 2% of patients in PACE. Some patients in PACE experienced recurrent or multisite vascular occlusion. Patients with and without cardiovascular risk factors, including patients age 50 years or younger, experienced these events. The most common risk factors observed with these events in PACE were history of hypertension, hypercholesterolemia, and non-ischemic cardiac disease. In OPTIC and PACE, AOEs were more frequent with increasing age. <p>In OPTIC, patients with uncontrolled hypertension or diabetes and patients with clinically significant, uncontrolled, or active cardiovascular disease were excluded. In PACE, patients with uncontrolled hypertriglyceridemia and patients with clinically significant or active cardiovascular disease within the 3 months prior to the first dose of ICLUSIG were excluded. Consider whether the benefits of ICLUSIG are expected to exceed the risks.</p><p>Monitor for evidence of AOEs. Interrupt, then resume at the same or decreased dose or discontinue ICLUSIG based on recurrence/severity. Consider benefit-risk to guide a decision to restart ICLUSIG.</p><h3>Venous Thromboembolic Events (VTEs):</h3> <p>Serious or severe VTEs have occurred in patients who received ICLUSIG. In PACE, VTEs occurred in 6% of 449 patients including serious or severe (Grade 3 or 4) VTEs in 5.8% of patients. VTEs included deep venous thrombosis, pulmonary embolism, superficial thrombophlebitis, retinal vein occlusion, and retinal vein thrombosis with vision loss. The incidence was higher in patients with Ph+ ALL (9% of 32 patients) and BP‑CML (10% of 62 patients). One of 94 patients in OPTIC experienced a VTE (Grade 1 retinal vein occlusion). Monitor for evidence of VTEs. Interrupt, then resume at the same or decreased dose or discontinue ICLUSIG based on recurrence/severity.</p><h3>Heart Failure:</h3> <p>Fatal, serious or severe heart failure events have occurred in patients who received ICLUSIG. In PACE, heart failure occurred in 9% of 449 patients; 7% experienced serious or severe (Grade 3 or higher). Heart failure occurred in 12% of 94 patients in OPTIC; 1.1% experienced serious or severe (Grade 3 or 4). In PACE, the most frequently reported heart failure events (≥2%) were congestive cardiac failure (3.1%), decreased ejection fraction (2.9%), and cardiac failure (2%). In OPTIC, the most frequently reported heart failure events (>1 patient each) were left ventricular hypertrophy (2.1%) and BNP increased (2.1%). Monitor patients for signs or symptoms consistent with heart failure and manage heart failure as clinically indicated. Interrupt, then resume at reduced dose or discontinue ICLUSIG for new or worsening heart failure.</p><h3>Hepatotoxicity:</h3> <p>ICLUSIG can cause hepatotoxicity, including liver failure and death. Fulminant hepatic failure leading to death occurred in 3 patients, with hepatic failure occurring within 1 week of starting ICLUSIG in one of these patients. These fatal cases occurred in patients with BP‑CML or Ph+ ALL. Hepatotoxicity occurred in 25% of 94 patients in OPTIC and 32% of 449 patients in PACE. Grade 3 or 4 hepatotoxicity occurred in OPTIC (6% of 94 patients) and PACE (13% of 449 patients). The most frequent hepatotoxic events were elevations of ALT, AST, GGT, bilirubin, and alkaline phosphatase. Monitor liver function tests at baseline, then at least monthly or as clinically indicated. Interrupt, then resume at a reduced dose or discontinue ICLUSIG based on recurrence/severity.</p><h3>Hypertension:</h3> <p>Serious or severe hypertension, including hypertensive crisis, has occurred in patients who received ICLUSIG. Patients may require urgent clinical intervention for hypertension associated with confusion, headache, chest pain, or shortness of breath. Monitor blood pressure at baseline and as clinically indicated and manage hypertension as clinically indicated. Interrupt, dose reduce, or stop ICLUSIG if hypertension is not medically controlled. For significant worsening, labile or treatment‑resistant hypertension, interrupt ICLUSIG and consider evaluating for renal artery stenosis.</p> <h3>Pancreatitis:</h3> <p>Serious or severe pancreatitis has occurred in patients who received ICLUSIG. Elevations of lipase and amylase also occurred. In the majority of cases that led to dose modification or treatment discontinuation, pancreatitis resolved within 2 weeks. Monitor serum lipase every 2 weeks for the first 2 months and then monthly thereafter or as clinically indicated. Consider additional serum lipase monitoring in patients with a history of pancreatitis or alcohol abuse. Interrupt, then resume at the same or reduced dose or discontinue ICLUSIG based on severity. Evaluate for pancreatitis when lipase elevation is accompanied by abdominal symptoms.</p><h3>Increased Toxicity in Newly Diagnosed Chronic Phase CML:</h3> <p>In a prospective randomized clinical trial in the first line treatment of newly diagnosed patients with CP‑CML, single agent ICLUSIG 45 mg once daily increased the risk of serious adverse reactions 2‑fold compared to single agent imatinib 400 mg once daily. The median exposure to treatment was less than 6 months. The trial was halted for safety. Arterial and venous thrombosis and occlusions occurred at least twice as frequently in the ICLUSIG arm compared to the imatinib arm. Compared to imatinib-treated patients, ICLUSIG-treated patients exhibited a greater incidence of myelosuppression, pancreatitis, hepatotoxicity, cardiac failure, hypertension, and skin and subcutaneous tissue disorders. ICLUSIG is not indicated and is not recommended for the treatment of patients with newly diagnosed CP‑CML.</p><h3>Neuropathy:</h3> <p>Peripheral and cranial neuropathy occurred in patients in OPTIC and PACE. Some of these events in PACE were Grade 3 or 4. Monitor patients for symptoms of neuropathy, such as hypoesthesia, hyperesthesia, paresthesia, discomfort, a burning sensation, neuropathic pain or weakness. Interrupt, then resume at the same or reduced dose or discontinue ICLUSIG based on recurrence/severity.</p>><h3>Ocular Toxicity:</h3> <p>Serious or severe ocular toxicity leading to blindness or blurred vision have occurred in ICLUSIG-treated patients. The most frequent ocular toxicities occurring in OPTIC and PACE were dry eye, blurred vision, and eye pain. Retinal toxicities included age-related macular degeneration, macular edema, retinal vein occlusion, retinal hemorrhage, and vitreous floaters. Conduct comprehensive eye exams at baseline and periodically during treatment.</p><h3>Hemorrhage:</h3> <p>Fatal and serious hemorrhage events have occurred in patients who received ICLUSIG. Fatal hemorrhages occurred in PACE and serious hemorrhages occurred in OPTIC and PACE. The incidence of serious bleeding events was higher in patients with AP‑CML, BP‑CML, and Ph+ ALL. Gastrointestinal hemorrhage and subdural hematoma were the most frequently reported serious hemorrhages. Events often occurred in patients with Grade 4 thrombocytopenia. Monitor for hemorrhage and manage patients as clinically indicated. Interrupt, then resume at the same or reduced dose or discontinue ICLUSIG based on recurrence/severity.</p><h3>Fluid Retention:</h3> <p>Fatal and serious fluid retention events have occurred in patients who received ICLUSIG. In PACE, one instance of brain edema was fatal and serious events included pleural effusion, pericardial effusion, and angioedema. Monitor for fluid retention and manage patients as clinically indicated. Interrupt, then resume at the same or reduced dose or discontinue ICLUSIG based on recurrence/severity.</p><h3>Cardiac Arrhythmias:</h3> <p>Cardiac arrhythmias, including ventricular and atrial arrhythmias, occurred in patients in OPTIC and PACE. For some patients, events were serious or severe (Grade 3 or 4) and led to hospitalization. Monitor for signs and symptoms suggestive of slow heart rate (fainting, dizziness) or rapid heart rate (chest pain, palpitations or dizziness) and manage patients as clinically indicated. Interrupt, then resume at the same or reduced dose or discontinue ICLUSIG based on recurrence/severity.</p><h3>Myelosuppression:</h3> <p>Grade 3 or 4 events of neutropenia, thrombocytopenia, and anemia occurred in patients in OPTIC and PACE. The incidence of myelosuppression was greater in patients with AP‑CML, BP‑CML, and Ph+ ALL than in patients with CP‑CML. Obtain complete blood counts every 2 weeks for the first 3 months and then monthly or as clinically indicated. If ANC less than 1 x 109/L or platelets less than 50 x 109/L, interrupt ICLUSIG until ANC at least 1.5 x 109/L and platelets at least 75 x 109/L, then resume at same or reduced dose.</p><h3>Tumor Lysis Syndrome (TLS):</h3> <p>Serious TLS was reported in ICLUSIG-treated patients in OPTIC and PACE. Ensure adequate hydration and treat high uric acid levels prior to initiating ICLUSIG.</p><h3>Reversible Posterior Leukoencephalopathy Syndrome (RPLS):</h3> <p>RPLS (also known as Posterior Reversible Encephalopathy Syndrome) has been reported in patients who received ICLUSIG. Along with neurological signs and symptoms, hypertension may be present. Diagnosis is made with supportive findings on magnetic resonance imaging (MRI) of the brain. Interrupt ICLUSIG until resolution. The safety of resumption of ICLUSIG in patients upon resolution of RPLS is unknown.</p><h3>Impaired Wound Healing and Gastrointestinal Perforation:</h3> <p>Impaired wound healing occurred in patients receiving ICLUSIG. Withhold ICLUSIG for at least 1 week prior to elective surgery. Do not administer for at least 2 weeks following major surgery and until adequate wound healing. The safety of resumption of ICLUSIG after resolution of wound healing complications has not been established. Gastrointestinal perforation or fistula occurred in patients receiving ICLUSIG. Permanently discontinue in patients with gastrointestinal perforation.</p><h3>Embryo-Fetal Toxicity:</h3> <p>Based on its mechanism of action and findings from animal studies, ICLUSIG can cause fetal harm when administered to a pregnant woman. In animal reproduction studies, adverse developmental effects occurred at exposures lower than human exposures at the recommended human dose. Advise pregnant women of the potential risk to the fetus. Advise females of reproductive potential to use effective contraception during treatment with ICLUSIG and for 3 weeks after the last dose.</p><h3>ADVERSE REACTIONS</h3><p>The most common (>20%) adverse reactions are rash and related conditions, arthralgia, abdominal pain, headache, constipation, dry skin, hypertension, fatigue, fluid retention and edema, pyrexia, nausea, pancreatitis/lipase elevation, hemorrhage, anemia, hepatic dysfunction and AOEs. The most common Grade 3 or 4 laboratory abnormalities (>20%) are platelet count decreased, neutrophil cell count decreased, and white blood cell decreased.</p><p><strong>To report SUSPECTED ADVERSE REACTIONS, contact Takeda Pharmaceutical Co. Ltd. at 1‑844‑817‑6468 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</strong></p><h3>DRUG INTERACTIONS:</h3><p><strong><span><u>Strong CYP3A Inhibitors:</u></span></strong> Avoid coadministration or reduce ICLUSIG dose if coadministration cannot be avoided.<br /> <strong><span><u>Strong CYP3A Inducers:</u></span></strong> Avoid coadministration.</p><h3>USE IN SPECIAL POPULATIONS</h3><p><strong><span>Females and Males of Reproductive Potential:</span></strong> Verify pregnancy status of females of reproductive potential prior to initiating ICLUSIG.<br /> Ponatinib may impair fertility in females, and it is not known if these effects are reversible.</p><p><strong><span>Lactation:</span></strong> Advise women not to breastfeed during treatment with ICLUSIG and for 6 days following last dose.</p>"
+    },
+    "info": "<p><strong>Please see NINLARO (ixazomib) full <a href=\"#link\">Prescribing Information</a>.</strong></p>",
+    "references": {
+      "heading": "Show References",
+      "content": "<strong>REFERENCES</strong>: <strong>1</strong>. NINLARO. Prescribing Information. Takeda Pharmaceutical Company Limited; 3/2021. <strong>2</strong>. Moreau P, Masszi T, Grzasko N, et al; for TOURMALINE-MM1 Study Group. Oral ixazomib, lenalidomide, and dexamethasone for multiple myeloma. N Engl J Med. 2016;374(17):1621-1634. <strong>3</strong>. Manda S, Yimer HA, Noga SJ, et al. Feasibility of long-term proteasome inhibition in multiple myeloma by in-class transition from bortezomib to ixazomib. Clin Lymphoma Myeloma Leuk. 2020;20(11):e910-e925. <strong>4</strong>. Data on File. Takeda Pharmaceutical Company Limited; 2021. <strong>5</strong>. Revlimid. Prescribing information. Celgene Corporation; 10/2019. <strong>6</strong>. Hemady. Prescribing information. Acrotech Biopharma, LLC; 2/2020. <strong>7</strong>. Terpos E, Ramasamy K, Maouche N, et al. Real-world effectiveness and safety of ixazomib-lenalidomide-dexamethasone in relapsed/refractory multiple myeloma. Ann Hematol. 2020;99(5):1049-1061. <strong>8</strong>. Hájek R, Minarík J, Straub J, et al. Ixazomib-lenalidomidedexamethasone in routine clinical practice: effectiveness in relapsed/refractory multiple myeloma. Future Oncol. Published online March 26, 2021. doi:10.2217/fon-2020-1225 <strong>9</strong>. Minarik J, Pika T, Radocha J, et al. Survival benefit of ixazomib, lenalidomide and dexamethasone (IRD) over lenalidomide and dexamethasone (Rd) in relapsed and refractory multiple myeloma patients in routine clinical practice. BMC Cancer. 2021;21(1):73."
+    }
+  },
+  "video1": {
+    "data_account_id": "2574028764001",
+    "data_player_id": "SykGTiz2b",
+    "heading": "Expert Insights",
+    "description": " <p>Hear from Dr. Robert Vescio as he shares his experience treating multiple myeloma with the NINLARO regimen.</p>",
+    "references": {
+      "text": "<p>Dr. Vescio is a paid consultant of Takeda Pharmaceuticals Company Limited.</p>"
+    },
+    "media": {
+      "id": "4034111342001"
+    },
+    "transcript": {
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac hendrerit quam, non convallis risus. Suspendisse imperdiet tincidunt tortor, et venenatis sem molestie nec. Curabitur ligula massa, porta eleifend vehicula vel, facilisis sit amet neque. Aliquam venenatis viverra nulla in iaculis. Maecenas id condimentum libero. Nunc venenatis, leo et ultrices placerat, ligula dui imperdiet ex, eu pellentesque lacus felis ac neque. Morbi aliquam lectus eu ex commodo, nec pretium elit vestibulum. Donec sit amet facilisis nisl, quis pretium dui. Donec venenatis, sapien ac dignissim condimentum, lectus odio finibus massa, eget scelerisque diam eros id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vulputate nec est at molestie. Maecenas sed ipsum nibh. Praesent pulvinar lobortis urna, nec consequat risus ullamcorper nec. Cras convallis est eget nibh tempor lacinia. In hac habitasse platea dictumst. Donec eu velit sit amet enim maximus aliquam sit amet quis ex.</p><p>Pellentesque placerat nec velit eget dapibus. Vestibulum suscipit volutpat mollis. Duis condimentum tincidunt nisi vel suscipit. Curabitur ac tempus tortor. Duis tristique libero sit amet justo tristique sagittis. Quisque faucibus lacus et justo pharetra tempus. Donec placerat tempor augue non egestas. Ut tristique cursus ipsum vitae interdum.</p><p>Aliquam congue vitae massa eget ornare. Nam at venenatis lectus. Duis odio sem, tempor ut magna sit amet, eleifend mattis eros. Pellentesque hendrerit ipsum a finibus mollis. Maecenas pulvinar ipsum eu justo fermentum, eget ullamcorper enim sodales. Mauris elementum justo nisi, fringilla hendrerit mi iaculis malesuada.</p>"
+    },
+    "watchButton": true
+  },
+  "video2": {
+    "data_account_id": "2574028764001",
+    "data_player_id": "SykGTiz2b",
+    "heading": "Video with chapters",
+    "chapters": [
+      {
+        "title": "00:05",
+        "time": "5"
+      },
+      {
+        "title": "00:45",
+        "time": "45"
+      },
+      {
+        "title": "01:06",
+        "time": "66"
+      }
+    ],
+    "media": {
+      "id": "6230656485001"
+    },
+    "transcript": {
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac hendrerit quam, non convallis risus. Suspendisse imperdiet tincidunt tortor, et venenatis sem molestie nec. Curabitur ligula massa, porta eleifend vehicula vel, facilisis sit amet neque. Aliquam venenatis viverra nulla in iaculis. Maecenas id condimentum libero. Nunc venenatis, leo et ultrices placerat, ligula dui imperdiet ex, eu pellentesque lacus felis ac neque. Morbi aliquam lectus eu ex commodo, nec pretium elit vestibulum. Donec sit amet facilisis nisl, quis pretium dui. Donec venenatis, sapien ac dignissim condimentum, lectus odio finibus massa, eget scelerisque diam eros id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vulputate nec est at molestie. Maecenas sed ipsum nibh. Praesent pulvinar lobortis urna, nec consequat risus ullamcorper nec. Cras convallis est eget nibh tempor lacinia. In hac habitasse platea dictumst. Donec eu velit sit amet enim maximus aliquam sit amet quis ex.</p><p>Pellentesque placerat nec velit eget dapibus. Vestibulum suscipit volutpat mollis. Duis condimentum tincidunt nisi vel suscipit. Curabitur ac tempus tortor. Duis tristique libero sit amet justo tristique sagittis. Quisque faucibus lacus et justo pharetra tempus. Donec placerat tempor augue non egestas. Ut tristique cursus ipsum vitae interdum.</p><p>Aliquam congue vitae massa eget ornare. Nam at venenatis lectus. Duis odio sem, tempor ut magna sit amet, eleifend mattis eros. Pellentesque hendrerit ipsum a finibus mollis. Maecenas pulvinar ipsum eu justo fermentum, eget ullamcorper enim sodales. Mauris elementum justo nisi, fringilla hendrerit mi iaculis malesuada.</p>"
+    }
+  }
+}

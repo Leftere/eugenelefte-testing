@@ -1,0 +1,38 @@
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+
+  {% include "@includes/3_components/hero.twig" with hero %}
+
+  {% include "@includes/2_pieces/heading.twig" with {
+    type: 'h2',
+    heading: 'MECHANISM OF ACTION'
+  } only %}
+
+  {% include "@includes/2_pieces/body-copy.twig" with {
+    content: text1
+  } only %}
+
+  <div class="wrapper">
+    {% include "@includes/3_components/dataviz.twig" with dataViz1 only %}
+  </div>
+
+  {% include "@includes/2_pieces/body-copy.twig" with {
+    content: text2
+  } only %}
+
+  {% include "@includes/2_pieces/heading.twig" with {
+    type: 'h3',
+    heading: 'PHARMACOKINETICS'
+  } only %}
+
+  {% include "@includes/2_pieces/body-copy.twig" with {
+    content: text3
+  } only %}
+
+  {% include "@includes/3_components/card-container.twig" with {
+    cards: twoCardsEnclosed,
+    type: "two-across"
+  } %}
+
+{% endblock %}

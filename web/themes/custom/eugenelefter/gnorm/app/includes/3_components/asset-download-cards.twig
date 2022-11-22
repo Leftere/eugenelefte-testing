@@ -1,0 +1,8 @@
+{% extends "@includes/3_components/card-container.twig" %}
+{% set type = "three-across" %}
+
+{% block cards_section %}
+  {% for card in cards %}
+    {% include "@includes/3_components/card--asset-download.twig" with card %}
+  {% endfor %}
+{% endblock %}

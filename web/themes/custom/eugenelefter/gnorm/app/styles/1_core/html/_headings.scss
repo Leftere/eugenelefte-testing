@@ -1,0 +1,152 @@
+// ================================== //
+//    #CORE/HTML - HEADING ELEMENTS
+// ================================== //
+
+:root {
+  // H1
+  --h1-size-mobile: 2.5rem;
+  --h1-size-desktop: 4rem;
+  --h1-weight: 700;
+  --h1-cap-style: none;
+  --h1-typeface: var(--font-heading);
+  --h1-lineheight-mobile: 1.08;
+  --h1-lineheight-desktop: 1.05;
+  --h1-color: var(--color-primary);
+
+  // H2
+  --h2-color: var(--color-secondary);
+  --h2-size-mobile: 2rem;
+  --h2-size-desktop: 3.3rem;
+  --h2-weight: 500;
+  --h2-cap-style: normal;
+  --h2-typeface: var(--font-heading);
+  --h2-lineheight-mobile: 1.2;
+  --h2-lineheight-desktop: .96;
+
+  // H3
+  --h3-color: var(--color-primary);
+  --h3-size-mobile: 2rem;
+  --h3-size-desktop: 3.2rem;
+  --h3-weight: 700;
+  --h3-cap-style: none;
+  --h3-typeface: var(--font-heading);
+  --h3-lineheight-mobile: 1.2;
+  --h3-lineheight-desktop: 1.0625;
+
+  // H4
+  --h4-color: var(--color-primary);
+  --h4-size-mobile: 1.2rem;
+  --h4-size-desktop: 1.8rem;
+  --h4-weight: 700;
+  --h4-cap-style: none;
+  --h4-typeface: var(--font-sans);
+  --h4-lineheight-mobile: 1.3;
+  --h4-lineheight-desktop: 1.4;
+
+  // Chart Title
+  --charttitle-color: var(--color-primary);
+  --charttitle-font: 1rem;
+  --charttitle-lineheight-desktop: 1.2;
+  --charttitle-lineheight-mobile: 1.2;
+  --charttitle-size-desktop: 2.7rem;
+  --charttitle-size-mobile: 2rem;
+  --charttitle-typeface: var(--font-sans);
+  --charttitle-weight: 700;
+}
+
+:where(h1, h2, h4, h5, h6) {
+  font-weight: 700;
+  margin-block-start: 0;
+
+  a {
+    color: currentColor;
+  }
+}
+
+:where(h1, h2) {
+  font-family: var(--font-heading);
+}
+
+:where(h3) {
+  font-family: var(--h3-typeface);
+  font-weight: 600;
+  margin-block-start: 0;
+
+  a {
+    color: currentColor;
+  }
+}
+
+%h1,
+h1,
+.h1 {
+  color: var(--h1-color);
+  font-size: var(--h1-size-mobile);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-lineheight-mobile);
+  text-transform: var(--h1-cap-style);
+  @include breakpoint($large-tablet) {
+    font-size: var(--h1-size-desktop);
+    line-height: var(--h1-lineheight-desktop);
+  }
+}
+
+%h2,
+h2,
+.h2 {
+  color: var(--h2-color);
+  font-size: var(--h2-size-mobile);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-lineheight-mobile);
+  text-transform: var(--h2-cap-style);
+
+  @include breakpoint($large-tablet) {
+    font-size: var(--h2-size-desktop);
+    line-height: var(--h3-lineheight-desktop);
+  }
+}
+
+%h3,
+h3,
+.h3 {
+  color: var(--h3-color);
+  font-size: var(--h3-size-mobile);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-lineheight-mobile);
+  text-transform: var(--h3-cap-style);
+
+  @include breakpoint($large-tablet) {
+    font-size: var(--h3-size-desktop);
+    line-height: var(--h3-lineheight-desktop);
+  }
+}
+
+%h4,
+h4,
+.h4 {
+  color: var(--h4-color);
+  font-family: var(--h4-typeface);
+  font-size: var(--h4-size-mobile);
+  font-weight: var(--h4-weight);
+  line-height: var(--h4-lineheight-mobile);
+  text-transform: var(--h4-cap-style);
+
+  @include breakpoint($large-tablet) {
+    font-size: var(--h4-size-desktop);
+    line-height: var(--h4-lineheight-desktop);
+  }
+}
+
+.chart-title {
+  color: var(--charttitle-color);
+  font-family: var(--charttitle-typeface);
+  font-size: var(--charttitle-size-mobile);
+  font-weight: var(--charttitle-weight);
+  line-height: var(--charttitle-lineheight-mobile);
+  text-align: center;
+
+  @include breakpoint($large-tablet) {
+    font-size: var(--charttitle-size-desktop);
+    line-height: var(--charttitle-lineheight-desktop);
+  }
+}

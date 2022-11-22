@@ -1,0 +1,19 @@
+<section class="accordions wrapper">
+{% for item in items %}
+  <details class="accordion">
+    <summary class="accordion__btn">
+      <div class="accordion__btn-inner">
+        <span class="accordion__heading">{{ item.button|raw }}</span>
+        <span aria-hidden="true" class="accordion__icon open">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-minus" } %}</span>
+        <span aria-hidden="true" class="accordion__icon closed">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-plus" } %}</span>
+      </div>
+    </summary>
+
+    <div class="accordion__panel">
+      <div class="accordion__panel-inner">
+        {{ item.content|raw }}
+      </div>
+    </div>
+  </details>
+{% endfor %}
+</section>

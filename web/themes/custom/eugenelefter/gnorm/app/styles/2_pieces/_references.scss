@@ -1,0 +1,66 @@
+.references {
+  --ref-icon-color: var(--color-secondary);
+  --ref-heading-color: var(--color-primary);
+  @include font-size(14, 19);
+  appearance: none;
+
+  summary {
+    appearance: none;
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &::marker {
+      display: none;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__heading {
+    color: var(--ref-heading-color);
+    font-weight: 700;
+  }
+
+  &__icon {
+    color: var(--ref-icon-color);
+    height: 3rem;
+    margin-inline-end: 1rem;
+    vertical-align: middle;
+    width: 3rem;
+
+    .icon {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .open {
+    display: none;
+  }
+
+  .closed {
+    display: inline-block;
+  }
+
+  &[open] {
+    .open {
+      display: inline-block;
+    }
+
+    .closed {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin-inline-start: 4.5rem;
+  }
+}
+

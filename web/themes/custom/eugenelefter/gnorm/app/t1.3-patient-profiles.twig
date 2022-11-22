@@ -1,0 +1,16 @@
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+
+{% include "@includes/3_components/hero.twig" with hero %}
+
+{% include "@includes/3_components/reference-text.twig" with referenceText only %}
+
+{% include "@includes/3_components/reference-text.twig" with referenceTextTwo only %}
+
+{% include "@includes/3_components/card-container.twig" with {
+  cards: threeCardsEnclosed,
+  type: "three-across"
+} %}
+
+{% endblock %}

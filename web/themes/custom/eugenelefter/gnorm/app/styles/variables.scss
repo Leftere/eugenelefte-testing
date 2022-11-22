@@ -1,0 +1,18 @@
+/* // ================================== //
+//    #VARIABLES
+//
+// Creates map of theme variables and encode as JSON
+// ================================== //
+
+@import 'sass-json-export/stylesheets/sass-json-export';
+@import '0_utility/mixins/colors';
+@import '0_utility/settings/colors';
+@import '0_utility/settings/variables';
+
+$variables: (
+  colors: $color-map
+);
+
+// https://github.com/oddbird/sass-json-export
+@include json-encode($variables, comment);
+ */

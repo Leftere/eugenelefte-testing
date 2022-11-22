@@ -1,0 +1,42 @@
+:root {
+  --footer-background-color: transparent;
+  --footer-background-image: linear-gradient(to bottom, transparent, #cbe7fb);
+  --footer-text-color: var(--color-gray-medium);
+  --footer-link-color: var(--color-primary);
+}
+
+.global-footer {
+  // background-color: var(--footer-background-color);
+  // background-image: var(--footer-background-image);
+  font-size: 1.2rem;
+  padding-block: 4rem;
+
+  @include breakpoint($tablet) {
+    padding-block: 5rem;
+  }
+
+  .nav__item a {
+    color: var(--footer-link-color);
+  }
+
+  p {
+    color: var(--footer-text-color);
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .logo {
+    svg {
+      width: 100%;
+    }
+  }
+
+  .cookie-settings {
+    flex: 1;
+    margin: 1.5rem 3rem;
+  }
+}

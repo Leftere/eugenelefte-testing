@@ -1,0 +1,93 @@
+{
+  "title": "1.3 Patient Profiles",
+  "hero": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "<strong>NINLARO<sup>&reg;</sup> (ixaomib) Relapsing Patient Profiles</strong>",
+    "subheading" :"<p>There are different patients with multiple myeloma who are eligible for the NINLARO triplet regimen.<sup>*1</sup></p>",
+    "references": "<p>*The NINLARO regimen includes NINLARO+lenalidomide+dexamethasone. The Rd regimenincluded placebo+lenalidomide+dexamethasone.</p>"
+  },
+  "referenceText": {
+    "text": "<p>†Bruce is not lenalidomide refractory.<br />ASCT=autologous stem cell transplant; ECOG PS=Eastern Cooperative Oncology Group performance status; FISH=fluorescence in<br /> situ hybridization; PI=proteasome inhibitor; R-ISS=revised International Staging System; VGPR=very good partial response.</p>"
+  },
+  "referenceTextTwo": {
+    "text": "<p>‡Alice is not lenalidomide refractory.<br /> ECOG=Eastern Oncology Cooperative Group performance status; FISH=fluorescence in situ hybridization;<br /> PI=proteasome inhibitor; R-ISS=revised International Staging System; VGPR=very good partial response.</p>"
+  },
+  "imageContent1": {
+    "imageBlock": {
+      "image": {
+        "src": "images/card.png",
+        "alt": ""
+      },
+      "figcaption": "Hypothetical Patient"
+    },
+    "ctaBlock": {
+      "title": "NINLARO could help Bruce",
+      "description": "<p>The TOURMALINE-MM1 trial evaluated long-term treatment with the all-oral NINLARO regimen, demonstrating a 6-month median PFS benefit.<sup>1,2</sup></p>",
+      "cta": {
+        "url": "#test",
+        "text": "Discover Clinical Data",
+        "icon": "icon-chevron-right"
+      }
+    },
+    "content": {
+      "heading": "<h3>Bruce, 58 years old, facing a first indolent relapse</h3>",
+      "body": "<p>Bruce is experiencing limited clinical symptoms, and his M protein levels have been increasing slowly over the past 4 months.</p><p><strong>Reason for clinic visit</strong></p><ul><li>Monthly follow-up visit; has completed 3 cycles of VELCADE-based induction, M protein levels have been increasing slowly</li></ul><p><strong>Diagnosis</strong></p><ul><li>Diagnosed with multiple myeloma 3 months ago; R-ISS stage II</li></ul><p><strong>Treatment history</strong></p><ul><li>Does not meet transplant-eligibility criteria</li><li>First line of therapy was 3-cycles of VELCADE+lenalidomide+dexamethasone</li><li>Patient does not have evidence of progressive disease after 3 treatment cycles</li><li>Prior diagnosis of hypertension and moderate anemia</li></p>"
+    }
+  },
+  "imageContent2": {
+    "imageBlock": {
+      "image": {
+        "src": "images/card.png",
+        "alt": ""
+      },
+      "figcaption": "Hypothetical Patient"
+    },
+    "ctaBlock": {
+      "heading": "NINLARO could help Alice",
+      "description": "<p>The TOURMALINE-MM1 trial evaluated long-term treatment with the all-oral NINLARO regimen, demonstrating a 6-month median PFS benefit.<sup>1,2</sup></p>",
+      "cta": {
+        "url": "#test",
+        "text": "Find Real-world Data",
+        "icon": "icon-chevron-right"
+      }
+    },
+    "content": {
+      "heading": "<h3>Alice, 75 years old, active elderly grandmother at first relapse</h3>",
+      "body": "<p>Alice has been experiencing relapse symptoms, so her physician is considering a triplet regimen.</p><p><strong>Reason for clinic visit</strong></p><ul><li>Monthly follow-up visit; has completed 3 cycles of VELCADE-based induction, M protein levels have been increasing slowly</li></ul><p><strong>Diagnosis</strong></p><ul><li>Diagnosed with multiple myeloma 3 months ago; R-ISS stage II</li></ul><p><strong>Treatment history</strong></p><ul><li>Does not meet transplant-eligibility criteria</li><li>First line of therapy was 3-cycles of VELCADE+lenalidomide+dexamethasone</li><li>Patient does not have evidence of progressive disease after 3 treatment cycles</li><li>Prior diagnosis of hypertension and moderate anemia</li></p>"
+    }
+  },
+  "threeCardsEnclosed": [
+    {
+      "class": "card--enclosed",
+      "title": "Continuous therapy outcomes",
+      "description": "<p>Proteasome inhibition remains a cornerstone of treatment with optimal outcomes.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Learn About Outcomes",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "class": "card--enclosed",
+      "title": "NINLARO real-world studies",
+      "description": "<p>Real-world evidence can complement data from clinical trials.</p>",
+      "cta": {
+        "url": "#test",
+        "text": "Explore Real-World Evidence",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "class": "card--enclosed",
+      "title": "NINLARO safety profile",
+      "cta": {
+        "url": "#test",
+        "text": "View Safety",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ]
+}

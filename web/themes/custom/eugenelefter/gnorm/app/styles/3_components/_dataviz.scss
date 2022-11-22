@@ -1,0 +1,38 @@
+.dataviz {
+  contain: content;
+  margin-block: 3rem;
+
+  &[data-bg] {
+    background-color: var(--dataviz-bg-color, #f1f1f1);
+    margin-inline: 3rem;
+    padding: 3rem;
+  }
+
+  .heading {
+    @extend %h3;
+    @include font-size(18);
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-block: .5rem 3rem;
+    padding: 0;
+  }
+
+  figure {
+    margin: 0;
+
+    @include breakpoint(max-width $large-tablet - 1px) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .reference {
+    margin-block-start: 3rem;
+
+    &.wrapper {
+      padding-left: unset;
+      padding-right: unset;
+    }
+  }
+}

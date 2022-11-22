@@ -1,0 +1,11 @@
+  <details class="references">
+    <summary>
+        <span aria-hidden="true" class="references__icon open">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-circle-minus" } %}</span>
+        <span aria-hidden="true" class="references__icon closed">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-circle-plus" } %}</span>
+        <span class="references__heading">{{ heading }}</span>
+    </summary>
+
+    <div class="references__content">
+      {{ content|raw }}
+    </div>
+  </details>

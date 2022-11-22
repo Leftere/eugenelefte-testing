@@ -1,0 +1,28 @@
+// ================================== //
+//    #CORE/HTML - LINKS
+// ================================== //
+
+:root {
+  --transition-duration: .3s;
+  --transition-timing-function: ease-in-out;
+  --transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: var(--transition);
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+  }
+}
+
+:focus,
+:focus-visible {
+  outline: 1px solid;
+  outline-offset: 2px;
+}

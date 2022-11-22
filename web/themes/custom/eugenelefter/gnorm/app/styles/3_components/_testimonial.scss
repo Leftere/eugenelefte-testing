@@ -1,0 +1,45 @@
+.testimonial {
+  --testimonial-color: var(--color-primary);
+  --testimonial-cite-color: var(--color-text);
+  --testimonial-quote-size: 2.4rem;
+  --testimonial-lh: 1.25;
+  --testimonial-cite-size: 1.6rem;
+  --testimonial-cite-lh: 1.25;
+  padding: 1.5rem;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+
+    @include breakpoint($large-tablet) {
+      width: min(80%, 80rem);
+    }
+  }
+
+  &__image {
+    display: grid;
+    margin: auto;
+    max-width: 150px;
+    place-content: center;
+  }
+
+  blockquote {
+    flex: 1 1 65%;
+    margin: 0;
+  }
+
+  &__text {
+    color: var(--testimonial-color);
+    font-size: var(--testimonial-quote-size);
+    line-height: var(--testimonial-lh);
+    margin-block: 1.5rem;
+  }
+
+  &__cite {
+    color: var(--testimonial-cite-color);
+    font-size: var(--testimonial-cite-size);
+    line-height: var(--testimonial-cite-lh);
+    margin-block: 1.5rem;
+  }
+}

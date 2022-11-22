@@ -1,0 +1,4 @@
+// phpcs:ignoreFile
+User-Agent: *
+Disallow: /
+

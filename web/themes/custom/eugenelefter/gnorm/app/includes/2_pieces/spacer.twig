@@ -1,0 +1,10 @@
+{% set type = type ? ' spacer--' ~ type : '' %}
+{# types: lg, md, sm #}
+
+<div class="spacer{{ type }}">
+  {% block line %}
+    {% if line == true %}
+    <hr class="spacer__line wrapper">
+    {% endif %}
+  {% endblock %}
+</div>

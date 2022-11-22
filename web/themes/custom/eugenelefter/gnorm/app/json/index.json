@@ -1,0 +1,189 @@
+{
+  "title": "Front End Template Directory",
+  "cssLinks": [
+    "styles/style-guide.css",
+    "/themes/custom/tbsd_sub/styles/theme.css"
+  ],
+  "hero": {
+    "title": "Front End Template Directory | Takeda Ninlaro",
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    }
+  },
+  "templates": [
+    {
+      "title": "0.0 Homepage",
+      "url": "t0.0-homepage.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1666056204/0.0+Homepage",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "0.01 Homepage",
+      "url": "t0.01-homepage.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1666056204/0.0+Homepage",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "1.1 Treatment Trends in MM",
+      "url": "t1.1-treatment-trends-in-mm.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682472961/1.1+Treatment+Trends+in+MM",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "1.2 MOA",
+      "url": "t1.2-moa.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243637/1.2+MOA",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "1.3 Patient Profiles",
+      "url": "t1.3-patient-profiles.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243648/1.3+Patient+Profiles",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "2.0 Clinical Data (MM1) Study",
+      "url": "t2.0-clinical-data-mm1-study.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243659/2.0+Clinical+Data+%28MM1%29+Study",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "3.0 Safety",
+      "url": "t3.0-safety.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243670/3.0+Safety",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "4.1 Real World Studies",
+      "url": "t4.1-real-world-studies.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682472975/4.1+Real+World+Studies",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "4.2 Real World Transition Study",
+      "url": "t4.2-real-world-transition-study.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682472986/4.2+Real+World+Transition+Study",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "5.1 Dosing",
+      "url": "t5.1-dosing.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243681/5.1+Dosing",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "5.2 Patient Management",
+      "url": "t5.2-patient-management.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243692/5.2+Patient+Management",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "6.1 Expert Insights",
+      "url": "t6.1-expert-insights.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682472997/6.1+Expert+Insights",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "6.2 Here2Assist",
+      "url": "t6.2-here2assist.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682473008/6.2+Here2Assist",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "6.3 Patient Resources",
+      "url": "t6.3-patient-resources.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682473019/6.3+Patient+Resources",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "6.4 Nurse Practitioners",
+      "url": "t6.4-nurse-practitioners.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682473030/6.4+Nurse+Practitioners",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "7.0 Contact a Rep",
+      "url": "t7.0-contact-a-rep.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682243703/7.0+Contact+a+Rep",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "7.1 Contact a Rep Confirmation",
+      "url": "t7.1-contact-a-rep-confirmation.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1682473041/7.1+Contact+a+Rep+Confirmation",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    },
+    {
+      "title": "Campaign Page",
+      "url": "campaign-page.html",
+      "annotations": "https://genuine.atlassian.net/wiki/spaces/TAK22/pages/1684733953/Campaign+Page",
+      "status": "not-started",
+      "wireframe": "",
+      "desktop": "",
+      "mobile": ""
+    }
+  ],
+  "utilityLinks": [
+    {
+      "name": "Webpack Bundle Analyzer report",
+      "link": "scripts/report.html",
+      "external": true
+    },
+    {
+      "name": "Components",
+      "link": "components-page.html"
+    }
+  ]
+}

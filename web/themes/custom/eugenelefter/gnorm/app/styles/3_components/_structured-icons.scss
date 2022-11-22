@@ -1,0 +1,17 @@
+.structured-icons {
+  &__container {
+    margin: auto;
+
+    @include breakpoint ($large-tablet) {
+      max-width: 85rem;
+    }
+
+    &.two-across {
+      @include breakpoint ($large-tablet) {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

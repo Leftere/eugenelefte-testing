@@ -1,0 +1,24 @@
+{% set style = style|default('callout--centered') %}
+
+<aside class="callout {{ style }} wrapper">
+  <div class="callout__wrapper">
+    <div class="callout__inner">
+      <div class="callout__heading">{{ heading|raw }}</div>
+
+      {% if links %}
+        <ul class="callout__ctas">
+          {% for link in links %}
+            <li class="callout__cta">
+              <a href="{{ link.url }}"{% if link.download or link.external %} target="_blank" rel="noopener" {% endif %}>
+                {{ link.text|raw }}
+
+                {% include "@includes/2_pieces/icon.twig" with {
+                  icon: link.icon|default('icon-chevron-right')
+                } %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+</aside>

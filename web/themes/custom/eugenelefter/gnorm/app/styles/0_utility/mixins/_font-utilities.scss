@@ -1,0 +1,68 @@
+// =======================================
+//    #UTILITY - FONT UTILITIES
+// =======================================
+
+// =============================================================================
+// Font Face
+//
+// Usage
+//   @include font-face($name: 'Roboto', $path: '../fonts/roboto/roboto-regular', $weight: 400, $style: normal);
+// or
+//   @include font-face('Roboto', '../fonts/roboto/roboto-regular', 400, normal);
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+  $src: null;
+  $formats: (
+    otf: 'opentype',
+    ttf: 'truetype'
+  );
+
+  @each $ext in $exts {
+    $format: if(map.has-key($formats, $ext), map.get($formats, $ext), $ext);
+    $src: list.append($src, url(string.quote($path + '.' + $ext)) format(string.quote($format)), comma);
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: string.quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// Converts pixel value font-size and line-height
+@mixin font-size($sizeValue: 16, $line: null) {
+  font-size: math.div($sizeValue, 10) + rem;
+
+  // only add line-height if value provided.
+  @if $line {
+    line-height: math.div($line, $sizeValue);
+  }
+}
+
+/* stylelint-disable length-zero-no-unit */
+// Photoshop "tracking" value to letter-spacing
+@mixin tracking($tracking) {
+  letter-spacing: calc($tracking / 1000) + 0em;
+}
+/* stylelint-enable length-zero-no-unit */
+
+// Add to elements to use web fonts properly
+// unnecessary when using CSS Cusomer Properties
+// @mixin web-font($webFont) {
+//   .fonts-loaded & {
+//     font-family: $webFont;
+//   }
+// }
+
+// =============================================================================
+// Font Smoothing
+//
+// `@extend %font-smoothing` when using custom fonts over dark backgrounds
+// =============================================================================
+%font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

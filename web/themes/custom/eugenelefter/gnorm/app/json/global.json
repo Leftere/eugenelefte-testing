@@ -1,0 +1,195 @@
+{
+  "siteTitle": "Takeda Brands Base",
+  "sub_theme_path": "/themes/custom/tbsd_sub",
+  "path_to_gnorm_build": "/themes/custom/brands_base/gnorm/build",
+  "base_theme_path_to_images": "/themes/custom/brands_base/gnorm/build/images",
+  "path_to_images": "/themes/custom/tbsd_sub/images",
+  "theme_logo": "/themes/custom/tbsd_sub/logo.svg",
+  "front_url": "index.html",
+  "site_name": "Takeda Child Site",
+  "cssLinks": [
+    "/themes/custom/tbsd_sub/styles/theme.css"
+  ],
+  "hero": {
+    "bgGradient": true
+  },
+  "icons": [
+    "icon-arrow-down",
+    "icon-arrow-left",
+    "icon-arrow-right",
+    "icon-arrow-up",
+    "icon-b2t",
+    "icon-chevron-down",
+    "icon-chevron-left",
+    "icon-chevron-right",
+    "icon-chevron-up",
+    "icon-circle",
+    "icon-circle-arrow-down",
+    "icon-circle-arrow-left",
+    "icon-circle-arrow-right",
+    "icon-circle-arrow-up",
+    "icon-circle-check",
+    "icon-circle-minus",
+    "icon-circle-pause",
+    "icon-circle-play",
+    "icon-circle-plus",
+    "icon-circle-x",
+    "icon-menu",
+    "icon-pause",
+    "icon-pill-hand",
+    "icon-pill-long",
+    "icon-pill-ninlaro",
+    "icon-pill-round",
+    "icon-play",
+    "icon-minus-solid",
+    "icon-plus-solid",
+    "icon-syringe",
+    "icon-triangle-down",
+    "icon-x",
+    "icon-download"
+  ],
+  "navPrimary": {
+    "items": [
+      {
+        "name": "Work",
+        "link": ""
+      },
+      {
+        "name": "Services",
+        "link": "#",
+        "items": [
+          {
+            "name": "Strategy and Planning",
+            "link": "#"
+          },
+          {
+            "name": "Experience design",
+            "link": "#"
+          },
+          {
+            "name": "Digital Engineering",
+            "link": "#"
+          },
+          {
+            "name": "Support and Optimization",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "About",
+        "link": "#"
+      },
+      {
+        "name": "Contact",
+        "link": "#"
+      }
+    ]
+  },
+  "navUtility": {
+    "items": [
+      {
+        "name": "Important Safety Information",
+        "link": "#ISI"
+      },
+      {
+        "name": "Prescribing Information",
+        "items": [
+          {
+            "name": "English",
+            "link": "#",
+            "external": true
+          },
+          {
+            "name": "Español",
+            "link": "#",
+            "external": true
+          }
+        ]
+      },
+      {
+        "name": "Medical Information",
+        "link": "#",
+        "external": "true"
+      },
+      {
+        "name": "Patient/Caregiver Site",
+        "link": "#",
+        "external": "true"
+      }
+    ]
+  },
+  "navSuperUtility": {
+    "items": [
+      {
+        "name": "NINLARO<sup>&reg;</sup> (ixazomib)<span class=\"extra\"> capsules 4mg/3mg/2.3.mg</span>",
+        "link": "t0.0-homepage.html",
+        "active": true
+      },
+      {
+        "name": "VELCADE<sup>&reg;</sup> (bortezomib)<span class=\"extra\"> FOR INJECTION</span>",
+        "link": "#"
+      }
+    ]
+  },
+  "navFooter": {
+    "items": [
+      {
+        "name": "Terms of Use",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Privacy Notice",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Contact Us",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Site Map",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Takedaoncology.com",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Cookie Policy",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Accessibility Statement",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Medical Information",
+        "link": "#"
+      }
+    ]
+  },
+  "scrollTop": true,
+  "isi": {
+    "heading": "IMPORTANT SAFETY INFORMATION, INDICATION, AND USAGE",
+    "sidebar": {
+      "heading": "INDICATION AND USAGE",
+      "text": "NINLARO is indicated in combination with lenalidomide and dexamethasone for the treatment of patients with multiple myeloma who have received at least one prior therapy."
+    },
+    "content": {
+      "heading": "IMPORTANT SAFETY INFORMATION",
+      "text": "<h3>WARNINGS AND PRECAUTIONS</h3> <ul> <li><strong>Thrombocytopenia</strong> has been reported with NINLARO® (ixazomib). During treatment, monitor platelet counts at least monthly, and consider more frequent monitoring during the first three cycles. Manage thrombocytopenia with dose modifications and platelet transfusions as per standard medical guidelines. Adjust dosing as needed. Platelet nadirs typically occurred between Days 14-21 of each 28-day cycle and recovered to baseline by the start of the next cycle.</li><li><strong>Gastrointestinal Toxicities</strong>, including diarrhea, constipation, nausea and vomiting, were reported with NINLARO and may occasionally require the use of antidiarrheal and antiemetic medications, and supportive care. Diarrhea resulted in the discontinuation of one or more of the three drugs in 1% of patients in the NINLARO regimen and &lt; 1% of patients in the placebo regimen. Adjust dosing for severe symptoms.</li><li><strong>Peripheral Neuropathy</strong> (predominantly sensory) was reported with NINLARO. The most commonly reported reaction was peripheral sensory neuropathy (19% and 14% in the NINLARO and placebo regimens, respectively). Peripheral motor neuropathy was not commonly reported in either regimen (&lt; 1%). Peripheral neuropathy resulted in discontinuation of one or more of the three drugs in 1% of patients in both regimens. Monitor patients for symptoms of peripheral neuropathy and adjust dosing as needed.</li><li><strong>Peripheral Edema</strong> was reported with NINLARO. Monitor for fluid retention. Investigate for underlying causes when appropriate and provide supportive care as necessary. Adjust dosing of dexamethasone per its prescribing information or NINLARO for Grade 3 or 4 symptoms.</li><li><strong>Cutaneous Reactions:</strong> Rash, most commonly maculo-papular and macular rash, was reported with NINLARO. Rash resulted in discontinuation of one or more of the three drugs in &lt; 1% of patients in both regimens. Manage rash with supportive care or with dose modification.</li><li><strong>Thrombotic Microangiopathy:</strong> Cases, sometimes fatal, of thrombotic microangiopathy, including thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS), have been reported in patients who received NINLARO. Monitor for signs and symptoms of TTP/HUS. If the diagnosis is suspected, stop NINLARO and evaluate. If the diagnosis of TTP/HUS is excluded, consider restarting NINLARO. The safety of reinitiating NINLARO therapy in patients previously experiencing TTP/HUS is not known.</li><li><strong>Hepatotoxicity</strong> has been reported with NINLARO. Drug-induced liver injury, hepatocellular injury, hepatic steatosis, hepatitis cholestatic and hepatotoxicity have each been reported in &lt; 1% of patients treated with NINLARO. Events of liver impairment have been reported (6% in the NINLARO regimen and 5% in the placebo regimen). Monitor hepatic enzymes regularly during treatment and adjust dosing as needed.</li><li><strong>Embryo-fetal Toxicity:</strong> Advise pregnant women of the potential risk to a fetus. Advise females of reproductive potential to use effective non-hormonal contraception during treatment with NINLARO and for 90 days following the final dose. Advise males with female partners of reproductive potential to use effective contraception during treatment with NINLARO and for 90 days following the final dose. NINLARO can cause fetal harm.</li></ul> <h3>ADVERSE REACTIONS</h3> <p>The most common adverse reactions (≥ 20%) in the NINLARO regimen and greater than the placebo regimen, respectively, were diarrhea (42%, 36%), constipation (34%, 25%), thrombocytopenia (78%, 54%; pooled from adverse events and laboratory data), peripheral neuropathy (28%, 21%), nausea (26%, 21%), peripheral edema (25%, 18%), vomiting (22%, 11%), and back pain (21%, 16%). Serious adverse reactions reported in ≥ 2% of patients included thrombocytopenia (2%) and diarrhea (2%).</p><h3>DRUG INTERACTIONS:</h3> <p>Avoid concomitant administration of NINLARO with strong CYP3A inducers.</p><h3>SPECIAL POPULATIONS</h3> <ul> <li><strong>Hepatic Impairment:</strong> Reduce the NINLARO starting dose to 3 mg in patients with moderate or severe hepatic impairment.</li><li><strong>Renal Impairment:</strong> Reduce the NINLARO starting dose to 3 mg in patients with severe renal impairment or end-stage renal disease requiring dialysis. NINLARO is not dialyzable.</li><li><strong>Lactation:</strong> Advise women not to breastfeed during treatment with NINLARO and for 90 days after the last dose.</li></ul>"
+    },
+    "info": "<p><strong>Please see NINLARO (ixazomib) full <a href=\"#link\">Prescribing Information</a>.</strong></p>",
+    "references": {
+      "heading": "Show References",
+      "content": "<strong>REFERENCES</strong>: <strong>1</strong>. NINLARO. Prescribing Information. Takeda Pharmaceutical Company Limited; 3/2021. <strong>2</strong>. Moreau P, Masszi T, Grzasko N, et al; for TOURMALINE-MM1 Study Group. Oral ixazomib, lenalidomide, and dexamethasone for multiple myeloma. N Engl J Med. 2016;374(17):1621-1634. <strong>3</strong>. Manda S, Yimer HA, Noga SJ, et al. Feasibility of long-term proteasome inhibition in multiple myeloma by in-class transition from bortezomib to ixazomib. Clin Lymphoma Myeloma Leuk. 2020;20(11):e910-e925. <strong>4</strong>. Data on File. Takeda Pharmaceutical Company Limited; 2021. <strong>5</strong>. Revlimid. Prescribing information. Celgene Corporation; 10/2019. <strong>6</strong>. Hemady. Prescribing information. Acrotech Biopharma, LLC; 2/2020. <strong>7</strong>. Terpos E, Ramasamy K, Maouche N, et al. Real-world effectiveness and safety of ixazomib-lenalidomide-dexamethasone in relapsed/refractory multiple myeloma. Ann Hematol. 2020;99(5):1049-1061. <strong>8</strong>. Hájek R, Minarík J, Straub J, et al. Ixazomib-lenalidomidedexamethasone in routine clinical practice: effectiveness in relapsed/refractory multiple myeloma. Future Oncol. Published online March 26, 2021. doi:10.2217/fon-2020-1225 <strong>9</strong>. Minarik J, Pika T, Radocha J, et al. Survival benefit of ixazomib, lenalidomide and dexamethasone (IRD) over lenalidomide and dexamethasone (Rd) in relapsed and refractory multiple myeloma patients in routine clinical practice. BMC Cancer. 2021;21(1):73."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{% set type = type|default('two-across') %}
+
+<div class="card-container">
+  <div class="card-container__inner wrapper {{ type }}">
+    {% block cards_section %}
+      {% for card in cards %}
+        {% include "@includes/3_components/card.twig" with card %}
+      {% endfor %}
+    {% endblock %}
+  </div>
+</div>

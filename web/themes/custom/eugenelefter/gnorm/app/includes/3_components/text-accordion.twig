@@ -1,0 +1,13 @@
+<details class="transcript wrapper">
+  <summary>
+    <div class="transcript__inner">
+      <span aria-hidden="true" class="transcript__icon open">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-minus-solid" } %}</span>
+      <span aria-hidden="true" class="transcript__icon closed">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-plus-solid" } %}</span>
+      <span class="transcript__heading"><span class="transcript__view">View</span><span class="transcript__hide">Hide</span> Transcript</span>
+    </div>
+  </summary>
+
+  <div class="transcript__content">
+    {{ text|raw }}
+  </div>
+</details>

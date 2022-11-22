@@ -1,0 +1,136 @@
+// ================================== //
+//    #CORE/HTML - FORMS
+// ================================== //
+
+form {
+  --form-label-color: var(--color-primary-dark);
+  --form-border-radius: 5px;
+  --form-error-color: var(--color-error);
+  --form-focus-border-color: var(--color-primary-dark);
+  --form-border-color: #768692;
+  --form-radio-label-color: var(--color-text);
+  --form-text-color: var(--color-text);
+  --form-accent-color: var(--color-primary);
+  @extend %wrapper;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type='submit'],
+input[type='radio'],
+input[type='checkbox'] {
+  accent-color: var(--form-accent-color);
+  width: auto;
+}
+
+input[type='submit'] {
+  @extend %btn;
+}
+
+.form-actions,
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 73rem;
+}
+
+
+.form-item {
+  input:focus,
+  input:focus:valid,
+  select:focus {
+    border-color: var(--form-focus-border-color);
+  }
+
+  &.webform-element--title-inline {
+    align-items: center;
+    flex-direction: row;
+
+    label {
+      margin-block-end: 0;
+      margin-inline-start: .5rem;
+    }
+  }
+
+  &.js-form-type-radio {
+    label {
+      color: var(--form-radio-label-color);
+      font-family: var(--font-sans);
+      font-weight: 400;
+      text-transform: none;
+    }
+  }
+
+  label,
+  legend {
+    @include font-size(12);
+    color: var(--form-label-color);
+    font-weight: 700;
+    margin-block-end: .5rem;
+    text-transform: uppercase;
+
+    @include breakpoint($large-tablet) {
+      @include font-size(18, 20);
+    }
+  }
+}
+
+
+.form-text,
+.form-select,
+.form-tel,
+.form-email {
+  border-color: var(--form-border-color);
+  border-radius: var(--form-border-radius);
+  color: var(--form-text-color);
+  padding-block: 1.8rem;
+}
+
+.form-required {
+  position: relative;
+
+  &:after {
+    color: currentColor;
+    content: '*';
+  }
+}
+
+input.error,
+input:focus:invalid,
+select.error {
+  border-color: var(--form-error-color);
+}
+
+.form-actions {
+  margin-block-start: 6rem;
+}
+
+.glb-toolbar .layout-builder-form .form-actions {
+  max-width: none; // Fix layout builder's toolbar while administrative theme is active
+}
+
+div[role='alert'] {
+  color: var(--form-error-color);
+  margin-inline: auto;
+  max-width: 73rem;
+
+  ul {
+    @include font-size(12);
+    padding-left: 3rem;
+
+    @include breakpoint($large-tablet) {
+      @include font-size(16);
+      padding-left: 2rem;
+    }
+  }
+}
+
+.form-item--error-message {
+  color: var(--form-error-color);
+}

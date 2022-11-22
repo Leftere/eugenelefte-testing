@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ title ~ ' | ' ~ siteTitle }}</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cleartype" content="on">
+
+{% block fontloader %}
+	<script>
+		if ("true" === sessionStorage.fontsLoaded) 
+document.documentElement.classList.add("fonts-loaded")
+ else {
+var script = document.createElement("script")
+script.src ="{{ base_theme_path_gnorm_build | default('/themes/custom/eugenelefter/gnorm/build') }}/scripts/fontloader.built.js",
+document.head.appendChild(script)
+}
+	</script>
+{% endblock %}
+
+<link rel="stylesheet" href="styles/screen.css">
+
+{% for link in cssLinks %}
+	<link rel="stylesheet" href="{{ link }}">
+{% endfor %}
+
+{% block favicon %}
+	{% include '@includes/1_core/favicons.twig' %}
+{% endblock %}

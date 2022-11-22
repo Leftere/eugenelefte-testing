@@ -1,0 +1,20 @@
+<div class="isi isi--fixed {% if hasBox %} isi--has-box {% endif %}">
+  <div class="isi__bar">
+    <div class="wrapper">
+      <h2 class="isi__heading h3">{{ heading|raw }}</h2>
+      <a class="isi__expand" href="#isi"><span>Expand</span>+</a>
+    </div>
+  </div>
+
+  <div class="isi__inner wrapper">
+    <div class="isi__content">
+      {{ content.text|raw }}
+    </div>
+    <div class="isi__sidebar">
+      <div class="isi__sidebar--inner">
+        <h3>{{ sidebar.heading|raw }}</h3>
+        <p>{{ sidebar.text|raw }}</p>
+      </div>
+    </div>
+  </div>
+</div>

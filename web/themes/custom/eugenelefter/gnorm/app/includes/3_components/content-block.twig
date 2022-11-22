@@ -1,0 +1,10 @@
+<div class="cta-block">
+  <div class="cta-block__title">
+    {% set title = ctaBlock.heading %}
+    {% include "@includes/2_pieces/heading.twig" with title only %}
+  </div>
+
+  {{ ctaBlock.content|raw }}
+
+  {% include "@includes/2_pieces/btn.twig" with ctaBlock.cta %}
+</div>

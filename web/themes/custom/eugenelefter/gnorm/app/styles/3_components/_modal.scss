@@ -1,0 +1,116 @@
+.external-link-popup.ui-dialog {
+  &:not(.ui-dialog-off-canvas) {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    max-width: 78rem;
+    padding: 1rem;
+    text-align: center;
+
+    @include breakpoint($large-tablet) {
+      padding: 6rem 7rem;
+    }
+  }
+
+  .ui-button:not(.ui-dialog-titlebar-close) {
+    @extend %btn;
+
+    // ideally, "cancel" would have a separate class applied instead.
+    &:nth-child(2) {
+      /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+      @extend .color--secondary;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .ui-dialog-buttonpane,
+  .ui-widget-content.ui-dialog-buttonpane,
+  .ui-dialog-titlebar {
+    background-color: transparent;
+    border: unset;
+  }
+
+  .ui-dialog-titlebar {
+    margin-block-end: unset;
+    padding-block: 4.5rem 1.8rem;
+    position: unset;
+
+    @include breakpoint($large-tablet) {
+      padding-block-start: 2rem;
+    }
+  }
+
+  .ui-dialog-titlebar-close {
+    --size: 4rem;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    height: var(--size);
+    inset: 1.5rem 1.5rem auto auto;
+    margin: 0;
+    width: var(--size);
+
+    .ui-button-icon {
+      background-image: url('../images/icons/icon-x.svg');
+      background-position: 50%;
+      background-size: 2.4rem;
+      height: 100%;
+      inset: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .ui-dialog-title {
+    @include font-size(25, 40);
+    color: var(--color-gray-medium);
+    font-family: var(--font-heading);
+    font-weight: 400;
+    margin-block: unset;
+    white-space: unset;
+    width: 100%;
+
+    @include breakpoint($large-tablet) {
+      @include font-size(30, 45);
+    }
+  }
+
+  .ui-dialog-content {
+    @include font-size(18, 29);
+    color: var(--color-gray-medium);
+    font-family: var(--font-heading);
+    margin-block-end: 1rem;
+    padding: unset;
+
+    @include breakpoint($large-tablet) {
+      margin-block-end: 3rem;
+    }
+  }
+
+  &.ui-widget-content,
+  .ui-widget-content {
+    border: unset;
+  }
+
+  .ui-widget-content.ui-dialog-buttonpane {
+    .button {
+      margin: 1rem;
+    }
+
+    .ui-dialog-buttonset {
+      display: flex;
+      flex-flow: row wrap;
+      float: unset;
+      justify-content: center;
+      padding: unset;
+    }
+  }
+}
+
+.ui-widget-overlay {
+  background-color: var(--color-black) !important;
+  opacity: .7 !important;
+}

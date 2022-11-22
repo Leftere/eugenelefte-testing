@@ -1,0 +1,25 @@
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+  {% include "@includes/3_components/hero.twig" with hero %}
+
+  {% include "@includes/2_pieces/heading.twig" with{
+      type: 'h2',
+      classes: ['chart-title'],
+      heading: 'Chart Title'
+    } only %}
+
+  {% include "@includes/3_components/reference-text.twig" with {
+    text: referenceList
+  } only %}
+
+  {% include "@includes/3_components/reference-text.twig" with {
+    text: referenceText
+  } only %}
+
+  {% include "@includes/3_components/card-container.twig" with {
+    cards: twoCards,
+    type: "two-across"
+  } %}
+
+{% endblock %}

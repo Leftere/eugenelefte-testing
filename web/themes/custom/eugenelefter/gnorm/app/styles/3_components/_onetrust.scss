@@ -1,0 +1,7 @@
+button#ot-sdk-btn {
+  &.ot-sdk-show-settings,
+  &.optanon-show-settings {
+    @extend %btn;
+    @extend %btn--sm;
+  }
+}

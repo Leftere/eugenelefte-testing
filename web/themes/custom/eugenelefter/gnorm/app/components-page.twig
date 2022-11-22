@@ -1,0 +1,332 @@
+{# _styleguide.twig #}
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+  <style>
+    .example {
+      margin-block: 5vw;
+    }
+  </style>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Main Hero</p>
+    </header>
+    {% include "@includes/3_components/hero.twig" with hero %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Hero Alt</p>
+    </header>
+    {% include "@includes/3_components/hero--alt.twig" with heroCampaign %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Hero Centered</p>
+    </header>
+    {% include "@includes/3_components/hero.twig" with heroFlex %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Hero without CTA</p>
+    </header>
+    {% include "@includes/3_components/hero.twig" with heroNoButton %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Anchor Link Bar</p>
+    </header>
+    {% include "@includes/3_components/anchor-link-bar.twig" with anchorLinks %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Structured Icon</p>
+    </header>
+    <div class="wrapper">
+      {% include "@includes/3_components/structured-icons.twig" with structuredIcons only %}
+    </div>
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Study Accordion</p>
+    </header>
+
+    <details class="accordion--study takeda-layouts wrapper" open>
+      <summary class="summary">
+        <div class="summary__inner">
+          <div class="icons">
+            <span aria-hidden="true" class="icon open">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-circle-minus" } %}</span>
+            <span aria-hidden="true" class="icon closed">{% include "@includes/2_pieces/icon.twig" with { icon: "icon-circle-plus" } %}</span>
+          </div>
+          <div class="summary__text">
+            <div class="summary__heading">This is a heading</div>
+            This is text content
+          </div>
+        </div>
+      </summary>
+
+      <div class="layout layout-builder__layout layout--onecol">
+        <div class="layout-builder__region layout__region layout__region--content">
+          This is content
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Primary Button</p>
+    </header>
+    {% include "@includes/3_components/primary-button.twig" with ctaComponent %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Testimonial</p>
+    </header>
+    {% include "@includes/3_components/testimonial.twig" with testimonial only %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Pullquote</p>
+    </header>
+    {% include "@includes/3_components/pullquote.twig" with pullquote only %}
+    {% include "@includes/3_components/pullquote.twig" with pullquoteStat only %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      Image Block
+    </header>
+    <div class="wrapper">
+    {% include "@includes/3_components/image-block.twig" with imageContent.imageBlock only %}
+    </div>
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      Video Component
+    </header>
+
+    <div class="wrapper">
+    {% include "@includes/3_components/video-player.twig" with video1 %}
+
+    {% include "@includes/2_pieces/spacer.twig" with { type: 'lg' } %}
+
+    {% include "@includes/3_components/video-player.twig" with video2 %}
+    </div>
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Small Card</p>
+    </header>
+    <div class="wrapper">
+    {% include "@includes/3_components/card--small.twig" with imageContent.ctaBlock %}
+    </div>
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Standard CTA Card: 3 cards across<p>
+    </header>
+    {% include "@includes/3_components/card-container.twig" with {
+      cards: threeCards,
+      type: "three-across"
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Standard CTA Card: 2 cards across</p>
+    </header>
+    {% include "@includes/3_components/card-container.twig" with {
+      cards: twoCards,
+      type: "two-across"
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Enclosed CTA Card</p>
+    </header>
+    {% include "@includes/3_components/card-container.twig" with {
+      cards: twoCardsEnclosed,
+      type: "two-across"
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Icon Cards</p>
+    </header>
+    {% include "@includes/3_components/icon-card.twig" with iconCards %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Asset Download Card</p>
+    </header>
+
+    {% include "@includes/3_components/card-container.twig" with {
+      cards: assetDownloadCards,
+      type: "three-across"
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Reference Text</p>
+    </header>
+    {% include "@includes/3_components/reference-text.twig" with referenceText %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Stacked Accordion</p>
+    </header>
+    {% include "@includes/3_components/stacked-accordion.twig" with stackedAccordion %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Text Accordion</p>
+    </header>
+    {% include "@includes/3_components/text-accordion.twig" with transcript %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Chart title</p>
+    </header>
+
+    {% include "@includes/2_pieces/heading.twig" with {
+      type: 'h3',
+      classes: ['chart-title'],
+      heading: 'PFS analysis in prespecified subgroups<sup>2,5,6</sup>'
+    } only %}
+
+    <div class="wrapper">
+      <p>H2 heading</p>
+    </div>
+    {% include "@includes/2_pieces/heading.twig" with {
+      type: 'h2',
+      id: 'h2ID',
+      heading: 'This is a heading!'
+    } only %}
+
+    <div class="wrapper">
+      <p>H3 heading</p>
+    </div>
+    {% include "@includes/2_pieces/heading.twig" with {
+      type: 'h3',
+      heading: 'This is another heading!'
+    } only %}
+
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Centered Callout</p>
+    </header>
+    {% include "@includes/3_components/callout.twig" with centeredCallout %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Two Column Content Area</p>
+    </header>
+
+    {% include "@includes/3_components/content-columns.twig" with {
+      items: contentColumns|slice(start, 1)
+    } only %}
+
+    {% include "@includes/3_components/content-columns.twig" with {
+      type: 'two-across',
+      items: contentColumns|slice(start, 2)
+    } only %}
+
+    {% include "@includes/3_components/content-columns.twig" with {
+      type: 'three-across',
+      items: contentColumns
+    } only %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Rich Text Area</p>
+    </header>
+    {% include "@includes/3_components/rich-text-area.twig" with richTextContent only %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Spacer, large</p>
+    </header>
+
+    {% include "@includes/2_pieces/spacer.twig" with {
+      type: 'lg'
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Spacer, medium, with line</p>
+    </header>
+
+    {% include "@includes/2_pieces/spacer.twig" with {
+      type: 'md',
+      line: true
+    } %}
+  </section>
+
+  <section class="example">
+    <header class="wrapper">
+      <p>Spacer, small</p>
+    </header>
+
+    {% include "@includes/2_pieces/spacer.twig" with {
+      type: 'sm'
+    } %}
+  </section>
+
+    <section class="example">
+    <header class="wrapper">
+      <p>List Columns</p>
+    </header>
+
+    <div class="wrapper">
+      <ul>
+        <li>list item 1</li>
+        <li>
+          list item 2
+          <ul class="columns">
+            <li>Arterial occlusive events (AOEs), including fatalities, have occurred in ICLUSIG-treated patients. AOEs included fatal myocardial infarction, stroke, stenosis of large arterial vessels of the brain, severe peripheral vascular disease, and the need for urgent revascularization procedures. Patients with and without cardiovascular risk factors, including patients age 50 years or younger, experienced these events. Monitor for evidence of AOEs. Interrupt or discontinue ICLUSIG based on severity. Consider benefit-risk to guide a decision to restart ICLUSIG.</li>
+            <li>Venous thromboembolic events (VTEs) have occurred in ICLUSIG-treated patients. Monitor for evidence of VTEs. Interrupt or discontinue ICLUSIG based on severity.</li>
+            <li>Heart failure, including fatalities, occurred in ICLUSIG-treated patients. Monitor for heart failure and manage patients as clinically indicated. Interrupt or discontinue ICLUSIG for new or worsening heart failure.</li>
+            <li>Hepatotoxicity, liver failure and death have occurred in ICLUSIG-treated patients. Monitor liver function tests. Interrupt or discontinue ICLUSIG based on severity.</li>
+          </ul>
+        </li>
+        <li>list item 3</li>
+        <li>list item 4
+          <ul class="columns--three">
+            <li>Arterial occlusive events (AOEs), including fatalities, have occurred in ICLUSIG-treated patients. AOEs included fatal myocardial infarction, stroke, stenosis of large arterial vessels of the brain, severe peripheral vascular disease, and the need for urgent revascularization procedures. Patients with and without cardiovascular risk factors, including patients age 50 years or younger, experienced these events. Monitor for evidence of AOEs. Interrupt or discontinue ICLUSIG based on severity. Consider benefit-risk to guide a decision to restart ICLUSIG.</li>
+            <li>Venous thromboembolic events (VTEs) have occurred in ICLUSIG-treated patients. Monitor for evidence of VTEs. Interrupt or discontinue ICLUSIG based on severity.</li>
+            <li>Heart failure, including fatalities, occurred in ICLUSIG-treated patients. Monitor for heart failure and manage patients as clinically indicated. Interrupt or discontinue ICLUSIG for new or worsening heart failure.</li>
+            <li>Hepatotoxicity, liver failure and death have occurred in ICLUSIG-treated patients. Monitor liver function tests. Interrupt or discontinue ICLUSIG based on severity.</li>
+          </ul>
+        </li>
+        <li>list item 5</li>
+      </ul>
+    </div>
+  </section>
+
+
+{% endblock %}

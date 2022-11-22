@@ -1,0 +1,27 @@
+.icon-cards {
+  --iconcard-text-color: var(--color-gray-medium);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  @include breakpoint($tablet) {
+    align-items: unset;
+    flex-direction: row;
+  }
+}
+
+.icon-card {
+  text-align: center;
+  width: 20rem;
+}
+
+.icon-card__icon {
+  margin-inline: auto;
+}
+
+.icon-card__text {
+  @include font-size(14, 21);
+  color: var(--iconcard-text-color);
+  font-weight: 500;
+}

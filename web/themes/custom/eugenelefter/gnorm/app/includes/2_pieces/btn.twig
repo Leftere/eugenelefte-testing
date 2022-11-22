@@ -1,0 +1,14 @@
+{% set type = url ? 'a' : 'button' %}
+
+{% set classes = classes ? classes|merge(['btn']) : ['btn'] %}
+
+{% if icon %}
+  {% set classes = classes|merge(['btn--icon']) %}
+{% endif %}
+
+<{{ type }} {% if url %}href="{{ url }}"{% endif %} class="{{ classes|join(' ') }}" {% if download or external %} target="_blank" rel="noopener" {% endif %}>
+  {{ text|raw }}
+  {% if icon %}
+    {% include "@includes/2_pieces/icon.twig" %}
+  {% endif %}
+</{{ type }}>

@@ -1,0 +1,52 @@
+{
+  "title": "4.1 Real World Studies",
+  "hero": {
+    "class": "flex",
+    "title": "NINLARO<sup>&reg;</sup> (ixaomib) Real-World Studies",
+    "subheading" :"<p>NINLARO has a wealth of real-world evidence (RWE) across a range of patient populations<sup>1-5</sup></p>",
+    "cta": {
+      "classes": ["color--secondary"],
+      "url": "#test",
+      "text": "Download RWE Brochure",
+      "icon": "icon-chevron-right"
+    }
+  },
+  "centeredCallout": {
+    "heading": "<p>The NINLARO regimen provided long-term efficacy and manageable tolerability in the TOURMALINE-MM1 clinical trial<sup>1-5</sup></p>",
+    "links": [
+      {
+        "url": "#test",
+        "text": "Discover MM1 Efficacy",
+        "icon": "icon-chevron-right"
+      },
+      {
+        "url": "#test",
+        "text": "Discover MM1 Safety",
+        "icon": "icon-chevron-right"
+      }
+    ]
+  },
+  "dataViz1": {
+    "bgColor": true,
+    "heading": {
+      "type": "div",
+      "heading": "Data-viz with heading"
+    },
+    "image": {
+      "src": "images/charts/4.1_trials.svg",
+      "srcSmall": "images/charts/4.1_trials-mobile.svg",
+      "alt": ""
+    },
+    "referenceList": {
+      "type": "ul",
+      "items": [
+        {
+          "item": "Unadjusted, indirect comparison for illustration only; clinical significance is not implied. Cross-trial comparisons are potentially confounded by differences in trial design and study population"
+        },
+        {
+          "item": "There was potential overlap<sup>‡</sup> in study populations in Terpos et al, Hájek et al, and Minarik et al due to inclusion of patients from the same registry"
+        }
+      ]
+    }
+  }
+}

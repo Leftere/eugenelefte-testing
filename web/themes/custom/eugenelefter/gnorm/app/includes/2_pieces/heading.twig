@@ -1,0 +1,19 @@
+{% set type = type|default('h2') %}
+
+{% set headingClasses = classes ? classes|join(' ') : '' %}
+
+{#
+  Heading reference:
+
+  intro heading: h2,
+  Subheading: h3,
+  chart title: .chart-title
+#}
+
+<div class="heading wrapper">
+  <{{ type }}
+  {% if headingClasses %} class="{{ headingClasses }}" {% endif %}
+  {% if id %} id="{{ id }}" {% endif %}>
+    <span>{{ heading|raw }}</span>
+  </{{ type }}>
+</div>

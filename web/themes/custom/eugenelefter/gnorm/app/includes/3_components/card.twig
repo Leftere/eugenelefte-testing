@@ -1,0 +1,27 @@
+<div class="card {{ cardClass ? cardClass : '' }}">
+  <h3 class="card__heading">{{ title|raw }}</h3>
+
+  {% if image %}
+    <div class="card__image">
+      {% if image %}
+        <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if description %}
+    <div class="card__description">{{ description|raw }}</div>
+  {% endif %}
+
+  {% if cta %}
+    <div class="card__cta">
+      {% include "@includes/2_pieces/btn.twig" with cta %}
+    </div>
+  {% endif %}
+
+  {% if link %}
+    <div class="card__link">
+      <a href="{{ link.url }}" {% if link.download or link.external %} target="_blank" rel="noopener" {% endif %}>{{ link.text|raw }}</a>
+    </div>
+  {% endif %}
+</div>

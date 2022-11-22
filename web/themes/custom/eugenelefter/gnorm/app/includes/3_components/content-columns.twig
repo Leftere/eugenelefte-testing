@@ -1,0 +1,7 @@
+<div class="content-columns">
+  <div class="content-columns__inner wrapper {{ type }}">
+    {% for item in items %}
+      {% include "@includes/2_pieces/content-column.twig" with item only %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,107 @@
+.nav {
+  padding: 4.2rem 0;
+  transition: all 0.4s ease-in-out;
+
+  .sticky-header & {
+    padding: 2rem 0;
+    background-color: #eee2df;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__menu-toggle {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    padding: 0 5rem;
+    @include font-size(19, 19);
+    font-family: var(--font-ibm);
+    font-style: normal;
+
+    .primary-nav__submenu {
+      left: 0;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      top: 13.8rem;
+      width: 100%;
+      background: var(--color-black);
+      height: 70vh;
+      transition: opacity 0.4s ease-in-out;
+
+      &.is-scrolled {
+        top: 9rem;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      &.is-opened {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .primary-nav__sub-container {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 20rem;
+
+        .primary-nav__sub-heading {
+          flex-basis: 40rem;
+
+          span {
+            @include font-size(44, 44);
+            color: var(--color-white);
+          }
+        }
+
+        .primary-nav__sub-list {
+          @include breakpoint($tablet) {
+            margin-left: 30rem;
+          }
+
+          .nav__subitem {
+            @include font-size(18, 18);
+            display: block;
+            margin-bottom: 3rem;
+
+            a {
+              text-decoration: none;
+              color: var(--color-white);
+              @include font-size(19, 19);
+            }
+          }
+        }
+      }
+    }
+    &:last-child {
+      padding: 0 0 0 5rem;
+    }
+  }
+
+  &__toggle {
+    padding: 0;
+    border: none;
+  }
+
+  &__sublist {
+    position: absolute;
+    &[aria-hidden='true'] {
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    &[aria-hidden='false'] {
+      margin: 0;
+      visibility: visible;
+    }
+  }
+}

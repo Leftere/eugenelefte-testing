@@ -1,0 +1,86 @@
+.card-container {
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-block: 3rem 6rem;
+    padding-inline: 0;
+  }
+
+  .card {
+    border-bottom: 1px solid var(--color-primary);
+    max-width: 45rem;
+    padding-block-end: 6rem;
+    padding-inline: 1.5rem;
+    position: relative;
+
+    @include breakpoint($large-tablet) {
+      &:not(.card--enclosed, :last-child, :only-child) {
+        &:after {
+          border-right: 1px solid #bfced6;
+          content: '';
+          display: none;
+          height: 100%;
+          position: absolute;
+          right: -1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    @include breakpoint(960px) {
+      border-bottom: 0;
+      padding-block-end: unset;
+    }
+
+    &--enclosed {
+      border-bottom: none;
+      padding-block-end: 2.8rem;
+
+      @include breakpoint($large-tablet) {
+        max-width: 60rem;
+      }
+
+      @include breakpoint(960px) {
+        padding-block-end: 4.5rem;
+      }
+    }
+  }
+
+  .default .card {
+    max-width: 60rem;
+  }
+
+  .full .card {
+    max-width: 100%;
+  }
+
+  .wide .card {
+    max-width: 80rem;
+  }
+
+  .two-across .card {
+    @include breakpoint(960px) {
+      &:not(:last-child):not(:only-child) {
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .three-across .card {
+    @include breakpoint(1000px) {
+      max-width: 100%;
+      width: calc((100% / 3) - 3rem);
+
+      &:not(:last-child):not(:only-child) {
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+}

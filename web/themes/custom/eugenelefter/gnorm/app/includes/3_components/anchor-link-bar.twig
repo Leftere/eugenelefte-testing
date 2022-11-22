@@ -1,0 +1,7 @@
+<nav class="anchor-link__bar">
+  <ul>
+    {% for item in items %}
+      <li><a href="{{ item.link }}" class="anchor-link">{{ item.text }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -31,3 +31,5 @@ private
 drush-backups
 .console
 /.gitattributes
+/themes/custom/eugenelefter/gnorm/node_modules
+/themes/custom/eugenelefter/gnorm/build

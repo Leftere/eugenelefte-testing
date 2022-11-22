@@ -1,0 +1,50 @@
+:root {
+  // Border radius
+  /* --button-border-radius: 100vmax;
+  --card-border-radius: 0; */
+
+  // Colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #bebebe;
+  --color-gray-light: #8a8a8a;
+  --color-gray-medium: #444;
+  --color-error: #cb1d21;
+  --color-error-contrast: var(--color-white, #fff);
+  --color-text: #333f48;
+
+  // Brand Primary
+  --color-primary: #0065a2;
+  --color-primary-contrast: var(--color-white, #fff);
+  --color-primary-dark: #00456f;
+  --color-primary-dark-contrast: var(--color-white, #fff);
+  --color-primary-light: #247aac;
+  --color-primary-light-contrast: var(--color-black, #000);
+
+  // Brand Secondary
+  --color-secondary: #c75201;
+  --color-secondary-contrast: var(--color-white, #fff);
+  --color-secondary-dark: #ad4701;
+  --color-secondary-dark-contrast: var(--color-white, #fff);
+  --color-secondary-light: #fe7516;
+  --color-secondary-light-contrast: var(--color-black, #000);
+
+  // Brand Tertiary
+  --color-tertiary: #757575;
+  --color-tertiary-contrast: var(--color-white, #fff);
+  --color-tertiary-dark: #757575;
+  --color-tertiary-dark-contrast: var(--color-white, #fff);
+  --color-tertiary-light: #757575;
+  --color-tertiary-light-contrast: var(--color-white, #fff);
+
+  // Spacer
+  --spacer-sm: 3rem;
+  --spacer-md: 4.5rem;
+  --spacer-lg: 6rem;
+}
+
+.fonts-loaded {
+  --font-heading: 'Raleway';
+  --font-sans: 'OpenSans';
+  --font-ibm: 'IbmFonts';
+}

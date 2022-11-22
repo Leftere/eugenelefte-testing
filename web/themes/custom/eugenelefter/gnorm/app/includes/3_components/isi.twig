@@ -1,0 +1,23 @@
+<div class="isi" id="isi" data-module="FixedISI">
+  <div class="isi__inner wrapper">
+    <div class="isi__content">
+      <h2 class="isi__heading">{{ content.heading|raw }}</h2>
+      {{ content.text|raw }}
+    </div>
+    <div class="isi__sidebar">
+      <div class="isi__sidebar--inner">
+        <h3>{{ sidebar.heading|raw }}</h3>
+        <p>{{ sidebar.text|raw }}</p>
+      </div>
+    </div>
+    <div class="isi__info">
+      {% block isi_info %}
+        {{ info|raw }}
+
+        {% if references %}
+          {% include "@includes/3_components/references.twig" with references %}
+        {% endif %}
+      {% endblock %}
+    </div>
+  </div>
+</div>

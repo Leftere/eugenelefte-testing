@@ -1,0 +1,23 @@
+{
+  "title": "Campaign Page",
+  "isCampaign": true,
+  "hero": {
+    "title": "<strong>The benefits of long-term proteasome inhibition with NINLARO<sup>&reg;</sup> (ixazomib)</strong>",
+    "subheading": "<p>NINLARO is the first efficacious, all-oral therapy for patients with multiple myeloma after one prior therapy.</p>",
+    "class": "hero--alt",
+    "image": {
+      "mobile": "images/lighthouse-mobile.png",
+      "tablet": "images/lighthouse-tablet.png",
+      "desktop": "images/lighthouse-desktop.png"
+    }
+  },
+  "navPrimary": {
+    "items": [
+      {
+        "name": "Request a Rep",
+        "link": "t7.0-contact-a-rep.html",
+        "className": "btn btn--sm color--secondary"
+      }
+    ]
+  }
+}

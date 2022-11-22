@@ -1,0 +1,89 @@
+.pullquote {
+  --pullquote-text-color: var(--color-primary);
+  --pullquote-line-color: var(--color-secondary);
+  --pullquote-mobile-font-size: 1.8rem;
+  --pullquote-mobile-line-height: 1.5;
+  --pullquote-desktop-font-size: 2.5rem;
+  --pullquote-desktop-line-height: 1.5;
+
+  &__wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    padding-block: 1.5rem;
+
+    @include breakpoint(500px) {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-shrink: 0;
+    max-width: 10rem;
+    min-width: 5rem;
+    place-content: center;
+
+    @include breakpoint($large-tablet) {
+      max-width: 20rem;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    color: var(--pullquote-text-color);
+    font-size: var(--pullquote-mobile-font-size);
+    font-weight: 700;
+    letter-spacing: -.2px;
+    line-height: var(--pullquote-mobile-line-height);
+    margin: 1.5rem 0;
+    padding-block: 0 2rem;
+    position: relative;
+
+    :first-child {
+      margin-block-start: 0;
+    }
+
+    :last-child {
+      margin-block-end: 0;
+    }
+
+    @include breakpoint(500px) {
+      margin-left: 1.5rem;
+    }
+
+    @include breakpoint($large-tablet) {
+      font-size: var(--pullquote-desktop-font-size);
+      line-height: var(--pullquote-desktop-line-height);
+      margin-left: 3rem;
+    }
+
+    &:after {
+      background-color: var(--pullquote-line-color);
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+    }
+
+    p {
+      margin-block-end: 1.5rem;
+
+      @include breakpoint($large-tablet) {
+        margin-block-end: 2rem;
+      }
+    }
+
+    sup {
+      font-size: .8em;
+    }
+  }
+}

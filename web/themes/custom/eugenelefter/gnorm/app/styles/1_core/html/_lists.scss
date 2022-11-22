@@ -1,0 +1,24 @@
+// ================================== //
+//    #CORE/HTML - LISTS
+// ================================== //
+
+ul {
+  @include breakpoint($large-tablet) {
+    &[class^='columns'] {
+      column-gap: 2em;
+
+      li {
+        break-inside: avoid;
+      }
+    }
+
+    &.columns,
+    &.columns--two {
+      column-count: 2;
+    }
+
+    &.columns--three {
+      column-count: 3;
+    }
+  }
+}

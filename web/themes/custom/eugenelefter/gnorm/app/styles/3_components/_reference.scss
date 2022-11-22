@@ -1,0 +1,16 @@
+.reference {
+  @include font-size(10, 14);
+  color: var(--color-gray-medium);
+  margin-top: auto;
+  text-align: left;
+
+  @include breakpoint($large-tablet) {
+    @include font-size(14, 20);
+  }
+
+  ul {
+    color: var(--color-text);
+    margin-block-end: 1rem;
+    padding-inline-start: 2rem;
+  }
+}

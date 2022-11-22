@@ -1,0 +1,59 @@
+.scrolltop {
+  bottom: 50px;
+  display: none;
+  justify-content: flex-end;
+  left: 50%;
+  max-width: 1440px;
+  pointer-events: none;
+  position: fixed;
+  transform: translateX(-50%);
+  transition: all .2s;
+  width: 100%;
+  z-index: 1;
+
+  @include breakpoint ($large-tablet) {
+    display: flex;
+  }
+
+  &.scrolled &__anchor {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  &__anchor {
+    border-radius: .25em;
+    margin: 1.5rem;
+    opacity: 0;
+    pointer-events: all;
+    transform: translateX(100%);
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+
+    &:hover {
+      .scrolltop__image {
+        transform: translateY(.25em);
+      }
+    }
+
+    &:focus {
+      outline-offset: .5em;
+      outline-style: dashed;
+    }
+
+    &:active {
+      outline-offset: .25em;
+
+      .scrolltop__image {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__image {
+    height: 8rem;
+    transition: all .2s ease-in-out;
+    width: 8rem;
+  }
+}
+

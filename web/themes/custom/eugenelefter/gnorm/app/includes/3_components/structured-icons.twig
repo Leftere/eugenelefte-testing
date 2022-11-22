@@ -1,0 +1,12 @@
+{# two-across or no extra class #}
+{% set type = type|default('') %}
+
+<div class="structured-icons">
+  <div class="structured-icons__wrapper">
+    <div class="structured-icons__container {{ type }}">
+      {% for item in items %}
+        {% include "@includes/2_pieces/structured-icon.twig" with item %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

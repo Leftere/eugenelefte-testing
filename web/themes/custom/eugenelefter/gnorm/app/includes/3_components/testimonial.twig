@@ -1,0 +1,17 @@
+<aside class="testimonial">
+  <div class="testimonial__wrapper wrapper">
+    {% if image %}
+    <div class="testimonial__image">
+      <img src="{{ image.src }}" alt="{% if image.alt %}{{ image.alt }}{% endif %}" loading="lazy">
+    </div>
+    {% endif %}
+
+    <blockquote>
+      <div class="testimonial__text">{{ quote|raw }}</div>
+
+      {% if citation %}
+      <div class="testimonial__cite">{{ citation|raw }}</div>
+      {% endif %}
+    </blockquote>
+  </div>
+</aside>

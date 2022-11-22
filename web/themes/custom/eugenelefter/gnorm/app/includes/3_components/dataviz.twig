@@ -1,0 +1,7 @@
+<div class="dataviz" {% if bgColor %}data-bg{% endif %}>
+  {% if heading %}
+    {% include "@includes/2_pieces/heading.twig" with heading only %}
+  {% endif %}
+
+  {% include "@includes/2_pieces/figure.twig" %}
+</div>

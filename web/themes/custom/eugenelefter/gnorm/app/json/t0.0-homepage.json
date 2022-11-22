@@ -1,0 +1,78 @@
+{
+  "bodyClass": "front",
+  "title": "T0.0 Homepage",
+  "hero": {
+    "background": {
+      "mobile": "images/hero-bg--mobile.png",
+      "desktop": "images/hero-bg--desktop.png"
+    },
+    "title": "NINLARO<sup>&reg;</sup> (ixaomib) Provides Durable Strength With <strong>Long-term* Proteasome Inhibition</strong><sup>1-4</sup>",
+    "subheading" :"<p>NINLARO is the first efficacious, all-oral triple regimen<sup>†</sup> for patients with multiple myeloma after one prior therapy.<sup>1,5,6</sup> NINLARO has been clinically proven to provide a broad range of patients with a deep, durable response in their multiple myeloma treatment.<sup>1-3,7-9</sup></p>",
+    "cta": {
+      "classes": ["color--secondary"],
+      "url": "#test",
+      "text": "Explore Durable Efficacy",
+      "icon": "icon-chevron-right"
+    },
+    "references": "<p>*Defined as treatment to disease progression or unacceptable toxicity.<br>†The NINLARO regimen includes NINLARO+lenalidomide+dexamethasone.</p>"
+  },
+  "twoCards": [
+    {
+      "title": "NINLARO Dosing",
+      "icon": "icon-pill-hand",
+      "description": "Find the dosing schedule for the NINLARO all-oral triple regimen and information on dose modifications.",
+      "cta": {
+        "url": "#test",
+        "text": "Get Dosing Info",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "Here2Assist",
+      "description": "Your connection for coverage support, financial assistance, and educational resources.",
+      "image": {
+        "src": "images/logo/logo-h2a.svg",
+        "alt": "Here2Assist logo"
+      },
+      "cta": {
+        "url": "#test",
+        "text": "Get Program Details",
+        "icon": "icon-chevron-right"
+      },
+      "link": {
+        "url": "#link",
+        "text": "Download enrollment form",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ],
+  "threeCards": [
+    {
+      "title": "NINLARO patient profiles",
+      "description": "Different patient types may benefit from NINLARO therapy.",
+      "cta": {
+        "url": "#test",
+        "text": "Discover Appropriate Patients",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "NINLARO real-world studies",
+      "description": "Real-world evidence can help bridge the gap between clinical trials and clinical practice. ",
+      "cta": {
+        "url": "#test",
+        "text": "Get Real-world Study Results",
+        "icon": "icon-chevron-right"
+      }
+    },
+    {
+      "title": "NINLARO patient resources",
+      "description": "Resources for your practice to help support patients starting or continuing NINLARO.",
+      "cta": {
+        "url": "#test",
+        "text": "Find Patient Resources",
+        "icon": "icon-chevron-right"
+      }
+    }
+  ]
+}

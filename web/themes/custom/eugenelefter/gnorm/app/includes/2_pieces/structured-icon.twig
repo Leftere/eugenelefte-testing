@@ -1,0 +1,18 @@
+
+<div class="structured-icon">
+  {% if image %}
+  <div class="structured-icon__image">
+    <img src="{{ image.src }}" loading="lazy" alt="{% if image.alt %}{{ image.alt }}{% endif %}">
+  </div>
+  {% endif %}
+  <div class="structured-icon__content">
+    {% if heading %}
+      <div class="structured-icon__title">
+        {{ heading|raw }}
+      </div>
+    {% endif %}
+    <div class="structured-icon__text">
+      {{ text|raw }}
+    </div>
+  </div>
+</div>
