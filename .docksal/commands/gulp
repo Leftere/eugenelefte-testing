@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Run Gulp Commands
+##
+## Usage: fin gulp [commands]
+
+cd $PROJECT_ROOT/web/themes/custom/eugenelefter/gnorm
+
+fin exec npx gulp $@
