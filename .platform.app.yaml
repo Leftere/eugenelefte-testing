@@ -74,15 +74,6 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         set -e
-        # install.sh will automatically install NodeJS based on the presence of $NODE_VERSION
-        curl -f -o- https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh | bash
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-        npm install --global gulp-cli
-        # Build the theme.
-        cd web/themes/custom/THEME
-        npm ci
-        gulp build
-
     # The deploy hook runs after your application has been deployed and started.
     # Code cannot be modified at this point but the database is available.
     # The site is not accepting requests while this script runs so keep it
