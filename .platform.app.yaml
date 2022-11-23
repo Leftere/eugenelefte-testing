@@ -76,6 +76,7 @@ hooks:
         set -e
         cd web/themes/custom/eugenelefter/gnorm
         npm install
+        npm install --global gulp-cli
         gulp build
     # The deploy hook runs after your application has been deployed and started.
     # Code cannot be modified at this point but the database is available.
