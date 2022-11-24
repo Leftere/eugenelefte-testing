@@ -74,7 +74,7 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         set -e
-        composer require drush
+        composer require drupal/drush
         drush -y updatedb
         drush -y config-import
         cd web/themes/custom/eugenelefter/gnorm
