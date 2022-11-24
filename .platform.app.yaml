@@ -74,6 +74,8 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         set -e
+        drush -y updatedb
+        drush -y config-import
         cd web/themes/custom/eugenelefter/gnorm
         npm install
         npm install --global gulp-cli
