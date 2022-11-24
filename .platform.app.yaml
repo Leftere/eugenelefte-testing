@@ -75,6 +75,7 @@ hooks:
     build: |
         set -e
         cd web/themes/custom/eugenelefter/gnorm
+        chmod 700 build
         npm install
         npm install --global gulp-cli
         gulp build
