@@ -118,7 +118,7 @@ web:
             passthru: '/index.php'
 
             # Deny access to all static files, except those specifically allowed below.
-            allow: false
+            allow: true
 
             # Rules for specific URI patterns.
             rules:
