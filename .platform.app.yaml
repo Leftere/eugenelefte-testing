@@ -84,12 +84,17 @@ hooks:
     # fast.
     deploy: |
         set -e
+        cd web
+        drush -y cache-rebuild
+        drush -y updatedb
+        drush -y config-import
         php ./drush/platformsh_generate_drush_yml.php
         # if drupal is installed, will call the following drush commands:
         #   - `cache-rebuild`
         #   - `updatedb`
         #   - and if config files are present, `config-import`
         ./drush/platformsh_deploy_drupal.sh
+        
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -113,7 +118,7 @@ web:
             passthru: '/index.php'
 
             # Deny access to all static files, except those specifically allowed below.
-            allow: false
+            allow: true
 
             # Rules for specific URI patterns.
             rules:
