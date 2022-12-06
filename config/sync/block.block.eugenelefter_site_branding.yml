@@ -1,0 +1,25 @@
+uuid: 4c8a2039-c660-4605-9efc-de26c9e46d66
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - eugenelefter
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: eugenelefter_site_branding
+theme: eugenelefter
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

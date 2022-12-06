@@ -1,0 +1,22 @@
+uuid: f5fc0ee2-0891-4f9d-9bc0-61946cdae9dc
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - eugenelefter
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: eugenelefter_help
+theme: eugenelefter
+region: top
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

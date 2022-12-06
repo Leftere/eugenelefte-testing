@@ -1,9 +1,14 @@
 <?php 
 
 function eugenelefter_preprocess_node(&$variables) {
-  // If the current user is logged in, and they are the owner of the node
-  // being viewed, add a suffix to the label variable.
-  $variables['current_user_is_owner'] = TRUE;
+  // Template variable to front-end files directory.
+  /** @var \Drupal\Core\Theme\ActiveTheme $active_theme */
+  $active_theme = \Drupal::service('theme.manager')->getActiveTheme();
+  $theme_path = base_path() . $active_theme->getPath();
+  $variables['path_to_theme'] = $theme_path;
+  $variables['path_to_gnorm'] = $variables['path_to_theme'] . "/gnorm";
+  $variables['path_to_gnorm_build'] = $variables['path_to_gnorm'] . "/build";
+  $variables['isBuild'] = TRUE;
 
 }
 

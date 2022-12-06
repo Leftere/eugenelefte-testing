@@ -1,0 +1,20 @@
+uuid: a3a15f9c-e7f5-4432-8bbb-d8df0354064c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - eugenelefter
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: eugenelefter_primary_admin_actions
+theme: eugenelefter
+region: top
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

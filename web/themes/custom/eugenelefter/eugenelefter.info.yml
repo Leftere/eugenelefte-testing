@@ -1,7 +1,7 @@
 name: eugenelefter
 type: theme
 base theme: stable9
-description: Takeda Brands base theme.
+description: Eugene Lefter theme.
 package: Takeda Brands
 core: 8.x
 core_version_requirement: ^8 || ^9
