@@ -3,7 +3,7 @@
 // ================================== //
 
 :root {
-  --transition-duration: .3s;
+  --transition-duration: 0.3s;
   --transition-timing-function: ease-in-out;
   --transition: all var(--transition-duration) var(--transition-timing-function);
 }
@@ -16,7 +16,6 @@ a {
   &:active,
   &:hover,
   &:focus {
-    color: var(--color-primary-dark);
     text-decoration: none;
   }
 }

@@ -1,0 +1,176 @@
+.global-header {
+  z-index: 20;
+  background-image: linear-gradient(
+    0deg,
+    var(--color-primary),
+    var(--color-primary)
+  );
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  transition: background 0.5s linear;
+
+  &.menu-is-open {
+    background-image: linear-gradient(
+      0deg,
+      var(--color-primary),
+      var(--color-primary)
+    );
+    color: var(--color-white);
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+    transition: background 0.5s linear;
+  }
+  &__desktop {
+    display: none;
+    @include breakpoint($large-tablet) {
+      display: block;
+    }
+    .global-header__bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__container {
+    position: static;
+    padding: 0 1rem;
+    .global-header__mobile {
+      @include breakpoint($large-tablet) {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      padding: 24px 0;
+
+      .logo {
+        margin-right: auto;
+
+        img {
+          max-width: 14rem;
+        }
+      }
+
+      .mobile-menu {
+        .nav-toggle {
+          display: block;
+          padding: 0;
+          background: 0;
+          border: 0;
+          cursor: pointer;
+
+          &__label {
+            margin-bottom: 0;
+            float: left;
+            margin-right: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 32px;
+            text-transform: uppercase;
+          }
+
+          &__label--open {
+            // display: none;
+          }
+
+          &__label--close {
+            display: none;
+          }
+        }
+
+        &__inner-container {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          background-image: linear-gradient(
+            0deg,
+            var(--color-primary),
+            var(--color-primary)
+          );
+          overflow-x: hidden;
+          overflow-y: auto;
+          transform: translateY(-100%);
+          padding: 0 4rem;
+
+          transition: transform 0.5s;
+        }
+
+        &.is-open {
+          .mobile-menu__drop-down {
+            visibility: visible;
+            opacity: 1;
+            transition: transform 0.5s;
+          }
+
+          .mobile-menu__inner-container {
+            transform: translateY(-0%);
+            transition: transform 0.5s;
+          }
+        }
+
+        &__drop-down {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: var(--z-dropdown);
+          height: 100vh;
+          max-height: calc(100vh - 84px);
+          width: 100%;
+          overflow: hidden;
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity 0.5s 0.5s, visibility 0.5s 0.5s;
+        }
+      }
+    }
+  }
+
+  &.is-expanded {
+    .primary-nav__top-link {
+      color: var(--color-white);
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        width: 100%;
+        height: 0.2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        background-image: linear-gradient(
+          0deg,
+          var(--color-white),
+          var(--color-white)
+        );
+        background-position: 0%;
+        background-size: 0% 100%;
+        transition: background 0.5s linear;
+      }
+      &:hover {
+        &:after {
+          content: '';
+          width: 100%;
+          opacity: 1;
+          transition: 0.2s;
+          background-image: linear-gradient(
+            0deg,
+            var(--color-white),
+            var(--color-white)
+          );
+          color: var(--color-white);
+          background-position: 0%;
+          background-size: 100% 100%;
+          transition: background 0.5s linear;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

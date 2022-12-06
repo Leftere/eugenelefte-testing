@@ -2,43 +2,43 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
-  <head>
-  {% block head %}
-    {% include '@includes/1_core/head.twig' %}
-  {% endblock %}
-  </head>
+	<head>
+		{% block head %}
+			{% include '@includes/1_core/head.twig' %}
+		{% endblock %}
+	</head>
 
-  <body{{- bodyClass is defined ? ' class="' ~ bodyClass ~ '"' : '' }} id="top">
+	<body{{-bodyClassisdefined?'class="'~bodyClass~'"':''}} id="top">
 
-  {% block skip_links %}
-    {% include "@includes/2_pieces/skipLinks.twig" %}
-  {% endblock %}
+		{% block skip_links %}
+			{% include "@includes/2_pieces/skipLinks.twig" %}
+		{% endblock %}
 
-  {% block page_top %}
-    {% include '@includes/4_regions/header.twig' %}
-  {% endblock %}
+		{% block page_top %}
+			{% include '@includes/4_regions/header.twig' with navPrimary %}
+		{% endblock %}
 
-  <main id="maincontent">
-    {% block page %}{% endblock %}
-  </main>
+		<main
+			id="maincontent">{# {% block page %}{% endblock %} #}
+		</main>
 
-  {% if scrollTop %}
-    {# {% include "@includes/3_components/scrolltop.twig" %} #}
-  {% endif %}
-{# 
-  {% include "@includes/3_components/isi--fixed.twig" with isi %}
-  {% include "@includes/3_components/isi.twig" with isi %} #}
+		{% if scrollTop %}
+			{# {% include "@includes/3_components/scrolltop.twig" %} #}
+		{% endif %}
+		{# 
+						  {% include "@includes/3_components/isi--fixed.twig" with isi %}
+						  {% include "@includes/3_components/isi.twig" with isi %} #}
 
-  {% block page_bottom %}
-    {% include '@includes/4_regions/footer.twig' %}
-  {% endblock %}
+		{% block page_bottom %}
+			{% include '@includes/4_regions/footer.twig' %}
+		{% endblock %}
 
-  {% block is_build %}
-    {% if isBuild != 'TRUE' %}
-      {% include '@includes/1_core/browser-sync.twig' %}
-    {% endif %}
-  {% endblock %}
+		{% block is_build %}
+			{% if isBuild != 'TRUE' %}
+				{% include '@includes/1_core/browser-sync.twig' %}
+			{% endif %}
+		{% endblock %}
 
-  </body>
+	</body>
 
 </html>

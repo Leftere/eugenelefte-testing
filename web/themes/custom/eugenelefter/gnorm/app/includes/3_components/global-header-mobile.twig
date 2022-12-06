@@ -1,0 +1,23 @@
+<div class="global-header__container wrapper">
+	<div class="global-header__mobile">
+		<div class="logo">
+			<a href="/" class="logo__link" aria-label="Velir">
+				<img src="{{ path_to_gnorm_build }}/images/logo/logo-placeholder.png" alt="logo">
+			</a>
+		</div>
+		<div class="mobile-menu js-mobile-menu menu-initialized ">
+			<button type="button" class="nav-toggle js-nav-toggle" id="menu14" aria-haspopup="true" aria-controls="menu13" aria-expanded="true">
+				<span class="nav-toggle__icon">
+					<span></span>
+				</span>
+				<span class="nav-toggle__label nav-toggle__label--open">Menu</span>
+				<span class="nav-toggle__label nav-toggle__label--close">Close</span>
+			</button>
+			<div class="mobile-menu__drop-down js-mobile-menu-content is-dark-mode" id="menu13" aria-labelledby="menu14">
+				<div class="mobile-menu__inner-container">
+					{% include "@includes/3_components/primary-nav.twig" %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

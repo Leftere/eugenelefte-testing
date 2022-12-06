@@ -4,6 +4,11 @@ const modules = {
       new Module.default($el)
     }).catch((e) => console.error(e))
   },
+  HeaderDropDown: ($el) => {
+    import('./HeaderDropDown/HeaderDropDown.main').then((Module) => {
+      new Module.default($el)
+    }).catch((e) => console.error(e))
+  },
   NavDropdown: ($el) => {
     import('./NavDropdown/NavDropdown.main').then((Module) => {
       new Module.default($el)

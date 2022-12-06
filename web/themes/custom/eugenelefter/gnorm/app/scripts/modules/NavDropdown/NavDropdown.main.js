@@ -5,6 +5,8 @@ class NavDropdown {
     this.toggles = [...this.$el.querySelectorAll('.nav__toggle')]
     this.submenu = this.$el.querySelector('.primary-nav__submenu')
     this.globalheader = document.querySelector('.js-global-header')
+    this.hamburger = document.querySelector('.js-hamburger')
+
     this.toggles.forEach((toggle) => {
       toggle.addEventListener('click', (e) => {
         this.toggleSubmenu(e)
@@ -13,6 +15,10 @@ class NavDropdown {
 
     document.addEventListener('scroll', () => {
       this.headerAnimation()
+    })
+
+    this.hamburger.addEventListener('click', (e) => {
+      this.globalheader.classList.contains('mobile-open') ? this.globalheader.classList.remove('mobile-open') : this.globalheader.classList.add('mobile-open') 
     })
   }
 

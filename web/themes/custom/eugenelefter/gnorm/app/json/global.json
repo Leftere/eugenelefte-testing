@@ -1,14 +1,14 @@
 {
   "siteTitle": "Takeda Brands Base",
   "sub_theme_path": "/themes/custom/tbsd_sub",
-  "path_to_gnorm_build": "/themes/custom/brands_base/gnorm/build",
-  "base_theme_path_to_images": "/themes/custom/brands_base/gnorm/build/images",
-  "path_to_images": "/themes/custom/tbsd_sub/images",
-  "theme_logo": "/themes/custom/tbsd_sub/logo.svg",
+  "path_to_gnorm_build": "/themes/custom/eugenelefter/gnorm/build",
+  "base_theme_path_to_images": "/themes/custom/eugenelefter/gnorm/build/images",
+  "path_to_images": "/themes/custom/eugenelefter/images",
+  "theme_logo": "/themes/custom/eugenelefter/logo.svg",
   "front_url": "index.html",
   "site_name": "Takeda Child Site",
   "cssLinks": [
-    "/themes/custom/tbsd_sub/styles/theme.css"
+    "/themes/custom/eugenelefter/styles/theme.css"
   ],
   "hero": {
     "bgGradient": true
@@ -51,10 +51,6 @@
   "navPrimary": {
     "items": [
       {
-        "name": "Work",
-        "link": ""
-      },
-      {
         "name": "Services",
         "link": "#",
         "items": [
@@ -77,6 +73,18 @@
         ]
       },
       {
+        "name": "Work",
+        "link": "",
+               "items": [
+          {
+            "name": "Case Studies",
+            "link": "#"
+          }
+       
+        ]
+      },
+
+      {
         "name": "About",
         "link": "#"
       },
@@ -86,52 +94,8 @@
       }
     ]
   },
-  "navUtility": {
-    "items": [
-      {
-        "name": "Important Safety Information",
-        "link": "#ISI"
-      },
-      {
-        "name": "Prescribing Information",
-        "items": [
-          {
-            "name": "English",
-            "link": "#",
-            "external": true
-          },
-          {
-            "name": "Español",
-            "link": "#",
-            "external": true
-          }
-        ]
-      },
-      {
-        "name": "Medical Information",
-        "link": "#",
-        "external": "true"
-      },
-      {
-        "name": "Patient/Caregiver Site",
-        "link": "#",
-        "external": "true"
-      }
-    ]
-  },
-  "navSuperUtility": {
-    "items": [
-      {
-        "name": "NINLARO<sup>&reg;</sup> (ixazomib)<span class=\"extra\"> capsules 4mg/3mg/2.3.mg</span>",
-        "link": "t0.0-homepage.html",
-        "active": true
-      },
-      {
-        "name": "VELCADE<sup>&reg;</sup> (bortezomib)<span class=\"extra\"> FOR INJECTION</span>",
-        "link": "#"
-      }
-    ]
-  },
+
+
   "navFooter": {
     "items": [
       {
