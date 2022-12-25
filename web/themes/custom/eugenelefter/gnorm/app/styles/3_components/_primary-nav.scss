@@ -1,5 +1,6 @@
 .primary-nav {
   margin-top: 2.5rem;
+
   @include breakpoint($large-tablet) {
     margin: 0;
   }
@@ -10,11 +11,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
+
     @include breakpoint($large-tablet) {
       flex-direction: row;
       // display: block;
     }
   }
+
   &__item {
     display: flex;
     align-items: center;
@@ -27,10 +30,12 @@
     @include breakpoint($desktop) {
       margin-left: 12rem;
     }
+
     &:first-child a {
       color: var(--color-white);
       // // desktop
       padding: 0 0.25rem;
+
       @include breakpoint($large-tablet) {
         color: var(--color-black);
       }
@@ -43,13 +48,15 @@
     @include font-size(28, 28);
     color: var(--color-white);
     padding: 0 0 2rem 0;
+
     @include breakpoint($large-tablet) {
       color: var(--color-black);
       padding: 0;
       @include font-size(18, 18);
       position: relative;
+
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: -1rem;
@@ -58,26 +65,23 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.2s;
-        background-image: linear-gradient(
-          0deg,
-          var(--color-primary),
-          var(--color-primary)
-        );
+        background-image: linear-gradient(0deg,
+            var(--color-primary),
+            var(--color-primary));
         background-position: 0%;
         background-size: 0% 100%;
         transition: background 0.5s linear;
       }
+
       &:hover {
         &:after {
-          content: '';
+          content: "";
           width: 100%;
           opacity: 1;
           transition: 0.2s;
-          background-image: linear-gradient(
-            0deg,
-            var(--color-primary),
-            var(--color-primary)
-          );
+          background-image: linear-gradient(0deg,
+              var(--color-primary),
+              var(--color-primary));
           color: var(--color-white);
           background-position: 0%;
           background-size: 100% 100%;
@@ -116,19 +120,23 @@
       .primary-nav__submenu-list {
         .primary-nav__subitem {
           padding-right: 1rem;
+
           .primary-nav__sub-link {
             color: var(--color-white);
             text-decoration: none;
             margin-bottom: 2rem;
             @include font-size(14, 14);
             display: inline-block;
+
             @include breakpoint($large-tablet) {
               @include font-size(18, 18);
               margin-bottom: 4rem;
             }
+
             position: relative;
+
             &:after {
-              content: '';
+              content: "";
               position: absolute;
               left: 0;
               bottom: -1rem;
@@ -137,26 +145,23 @@
               opacity: 0;
               visibility: hidden;
               transition: 0.2s;
-              background-image: linear-gradient(
-                0deg,
-                var(--color-white),
-                var(--color-white)
-              );
+              background-image: linear-gradient(0deg,
+                  var(--color-white),
+                  var(--color-white));
               background-position: 0%;
               background-size: 0% 100%;
               transition: background 0.5s linear;
             }
+
             &:hover {
               &:after {
-                content: '';
+                content: "";
                 width: 100%;
                 opacity: 1;
                 transition: 0.2s;
-                background-image: linear-gradient(
-                  0deg,
-                  var(--color-white),
-                  var(--color-white)
-                );
+                background-image: linear-gradient(0deg,
+                    var(--color-white),
+                    var(--color-white));
                 color: var(--color-white);
                 background-position: 0%;
                 background-size: 100% 100%;
@@ -176,10 +181,12 @@
         height: auto;
         padding: 0 0.8rem;
         transition: 0.5s;
+
         @include breakpoint($large-tablet) {
           padding: 18rem 0 0.8rem 0;
         }
       }
+
       .primary-nav__sub-heading-link {
         @include breakpoint($large-tablet) {
           @include font-size(44, 44);
@@ -187,8 +194,9 @@
           margin-left: 2rem;
           text-decoration: none;
           position: relative;
+
           &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             bottom: 0rem;
@@ -197,11 +205,9 @@
             opacity: 0;
             visibility: hidden;
             transition: 0.2s;
-            background-image: linear-gradient(
-              0deg,
-              var(--color-white),
-              var(--color-white)
-            );
+            background-image: linear-gradient(0deg,
+                var(--color-white),
+                var(--color-white));
             background-position: 0%;
             background-size: 0% 100%;
             transition: background 0.5s linear;
@@ -209,15 +215,13 @@
 
           &:hover {
             &:after {
-              content: '';
+              content: "";
               width: 100%;
               opacity: 1;
               transition: 0.2s;
-              background-image: linear-gradient(
-                0deg,
-                var(--color-white),
-                var(--color-white)
-              );
+              background-image: linear-gradient(0deg,
+                  var(--color-white),
+                  var(--color-white));
               color: var(--color-white);
               background-position: 0%;
               background-size: 100% 100%;
@@ -259,9 +263,11 @@
     flex-basis: auto;
     flex-shrink: 1;
     columns: 1;
+
     @include breakpoint($large-tablet) {
       columns: 2;
     }
+
     .primary-nav__subitem {
       display: block;
       width: 100%;

@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+<header class="header js-header" data-module="HeaderDropDown">
+
+
+	<section
+		class="global-header js-global-header" style="margin-bottom: 0px;">
+
+		{# {% include "@includes/3_components/global-header-mobile.twig"  with navPrimary  %} #}
+
+		{% block header_element %}
+			{% if content %}
+
+				{{ content }}
+
+			{% endif %}
+		{% endblock  %}
+
+		<div class="skip-navigation">
+			<a href="#main-content" class="skip-navigation__wrapper u-visuallyhidden js-skip-navigation">Skip to main content</a>
+		</div>
+	</section>
+
+
+</header>

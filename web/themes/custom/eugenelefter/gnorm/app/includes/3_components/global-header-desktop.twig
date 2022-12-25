@@ -1,16 +1,19 @@
 <div class="global-header__desktop">
-	<div class="global-header__container wrapper">
-		<div class="global-header__bottom">
-			<div class="global-header__bottom-left">
-				<div class="logo">
-					<a href="/" class="logo__link" aria-label="Velir">
-						<img src="{{ path_to_gnorm_build }}/images/logo/logo-placeholder.png" alt="logo">
-					</a>
-				</div>
-			</div>
-			<div class="global-header__bottom-right">
-				{% include "@includes/3_components/primary-nav.twig" with navPrimary %}
-			</div>
-		</div>
-	</div>
+  <div class="global-header__container wrapper">
+    <div class="global-header__bottom">
+      <div class="global-header__bottom-left">
+        <div class="logo">
+          <a href="/" class="logo__link" aria-label="Velir">
+            <img src="{{
+              path_to_gnorm_build
+              }}/images/logo/logo-placeholder.png"
+              alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="global-header__bottom-right">
+        {% include '@includes/3_components/primary-nav.twig' with navPrimary %}
+      </div>
+    </div>
+  </div>
 </div>
